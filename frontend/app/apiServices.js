@@ -1,5 +1,5 @@
 const API_BASE_URL = 'http://127.0.0.1:8000'; 
-// const API_BASE_URL = "https://okhatisathi.onrender.com"
+
 
 // Function to fetch the audio for a given medicine name
 export const getMedicineAudio = async (medicineName) => {

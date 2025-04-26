@@ -14,7 +14,13 @@ import base64
 from OCR import perform_ocr  
 from recognition import extract_medicine_name 
 from dotenv import load_dotenv
+import sys
+# Add the full absolute path to ./tacotron2 to sys.path
+tacotron_path = os.path.abspath("tacotron2")
+if tacotron_path not in sys.path:
+    sys.path.insert(0, tacotron_path)
 
+import nepalitts  
 # Create FastAPI app
 app = FastAPI()
 
@@ -227,7 +233,7 @@ async def get_medicine_audio_endpoint(request: MedicineRequest):
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a helpful Nepali nurse explaining medicine information in simple, clear Nepali language suitable for text-to-speech. Avoid medical jargon and complex sentence structures. Do not use markdown like * or :."
+                    "content": "You are a helpful Nepali nurse explaining medicine information in simple, clear Nepali language in devanagari script suitable for text-to-speech. Avoid medical jargon and complex sentence structures. Do not use markdown like * or :. Give everything in a small sentence (only 1 sentence)"
                 },
                 {
                     "role": "user",
@@ -268,8 +274,25 @@ async def get_medicine_audio_endpoint(request: MedicineRequest):
 
     try:
         print(f"Generating TTS audio, saving to: {mp3_filename}")
-        tts = gTTS(text=layman_text, lang='ne', slow=False) # lang='ne' for Nepali
-        tts.save(mp3_filename)
+        
+        
+        # tts = gTTS(text=layman_text, lang='ne', slow=False) # lang='ne' for Nepali
+        # tts.save(mp3_filename)
+        
+        output_directory = "audio_files"
+        output_file_1 = mp3_filename
+        sampling_rate = 22050  # Set the sampling rate to 22050 Hz
+        # Call nepalitts.nepalitts, which will now return audio data (audio_numpy)
+        synthesized_audio = nepalitts.nepalitts(text=layman_text)
+        if synthesized_audio is not None:  # Check if the synthesis was successful
+            print(f"Successfully synthesized audio.")
+            # Now you can save the audio data to a file if you need to
+            import scipy.io.wavfile as wavfile
+            wavfile.write(output_file_1, sampling_rate, synthesized_audio)
+            print(f"Audio saved to {output_file_1}")
+        else:
+            print("Synthesis failed for the first text.")
+
         print("TTS audio generated successfully.")
     except Exception as tts_error:
         print(f"Error generating TTS audio: {tts_error}")
