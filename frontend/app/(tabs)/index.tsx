@@ -165,6 +165,7 @@ export default function HomeScreen() {
         } else {
           await sound.playAsync();
           setIsPlaying(true);
+          setStatusMessage("Audio Playing..."); // Update status message
         }
       }
     }
