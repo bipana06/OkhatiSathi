@@ -24,10 +24,10 @@ export default function HomeScreen() {
 
   const handleImageUpload = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!permissionResult.granted) {
-      Alert.alert('Permission Required', 'Permission to access camera roll is required to upload images.');
-      return;
-    }
+    // if (!permissionResult.granted) {
+    //   Alert.alert('Permission Required', 'Permission to access camera roll is required to upload images.');
+    //   return;
+    // }
 
     try {
       const response = await ImagePicker.launchImageLibraryAsync({
