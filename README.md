@@ -20,22 +20,24 @@ Follow these steps to set up and run the app:
     cd OkhatiSathi
     ```
 2. **Backend Setup**:
-    1. 
+
+    1. navigate to backend
     ```bash
     cd backend
     ```
-    2. 
-    # Virtual Environment 
+    2. Virtual Environment 
     ```bash
     python -m venv campusenv
     source campusenv/bin/activate  # On Windows: campusenv\Scripts\activate
     ```
-    3. 
-    Ensure you have Python installed. Then, run:
+    3. Ensure you have Python installed. Then, run:
     ```bash
     cd backend
     pip install -r requirements.txt
     ```
+
+    4. Add a .env file and add your ```GROQ_API_KEY```
+    
 3. **Run the Application**:
     ```bash
     cd frontend
