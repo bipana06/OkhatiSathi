@@ -1,0 +1,175 @@
+2025-04-24 10:50:51,102 INFO    MainThread:419665 [wandb_setup.py:_flush():76] Configure stats pid to 419665
+2025-04-24 10:50:51,102 INFO    MainThread:419665 [wandb_setup.py:_flush():76] Loading settings from /home/md5121/.config/wandb/settings
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_setup.py:_flush():76] Loading settings from wandb/settings
+2025-04-24 10:50:51,103 WARNING MainThread:419665 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_X_REQUIRE_LEGACY_SERVICE
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'md5121-new-york-university', 'project': 'tacotron2', 'sweep_id': 'w4oyzcwb', 'root_dir': '/scratch/md5121/okhatisathi/tacotron2', 'run_id': 'm6p9uq6t', 'sweep_param_path': '/scratch/md5121/okhatisathi/tacotron2/wandb/sweep-w4oyzcwb/config-m6p9uq6t.yaml'}
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'goat_finetune.py', 'program': 'goat_finetune.py'}
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_init.py:_log_setup():461] Logging user logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250424_105051-m6p9uq6t/logs/debug.log
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_init.py:_log_setup():462] Logging internal logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250424_105051-m6p9uq6t/logs/debug-internal.log
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_init.py:init():495] calling init triggers
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_init.py:init():499] wandb.init called with sweep_config: {'batch_size': 32, 'early_stopping_patience': 8, 'learning_rate': 0.00046036510732638054, 'p_attention_dropout': 0.15, 'p_decoder_dropout': 0.15, 'weight_decay': 1.665892544368306e-06}
+config: {}
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [wandb_init.py:init():548] starting backend
+2025-04-24 10:50:51,103 INFO    MainThread:419665 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-04-24 10:50:51,144 INFO    MainThread:419665 [backend.py:ensure_launched():217] starting backend process...
+2025-04-24 10:50:51,168 INFO    MainThread:419665 [backend.py:ensure_launched():222] started backend process with pid: 419706
+2025-04-24 10:50:51,169 INFO    MainThread:419665 [wandb_init.py:init():558] backend started and connected
+2025-04-24 10:50:51,180 INFO    MainThread:419665 [wandb_run.py:_config_callback():1131] config_cb None None {'batch_size': 32, 'early_stopping_patience': 8, 'learning_rate': 0.00046036510732638054, 'p_attention_dropout': 0.15, 'p_decoder_dropout': 0.15, 'weight_decay': 1.665892544368306e-06}
+2025-04-24 10:50:51,182 INFO    MainThread:419665 [wandb_init.py:init():634] updated telemetry
+2025-04-24 10:50:51,220 INFO    MainThread:419665 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2025-04-24 10:50:52,732 INFO    MainThread:419665 [wandb_run.py:_on_init():1919] communicating current version
+2025-04-24 10:50:52,799 INFO    MainThread:419665 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-24 10:50:52,799 INFO    MainThread:419665 [wandb_init.py:init():700] starting run threads in backend
+2025-04-24 10:50:56,089 INFO    MainThread:419665 [wandb_run.py:_console_start():1893] atexit reg
+2025-04-24 10:50:56,090 INFO    MainThread:419665 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.REDIRECT
+2025-04-24 10:50:56,091 INFO    MainThread:419665 [wandb_run.py:_redirect():1771] Redirecting console.
+2025-04-24 10:50:56,093 INFO    MainThread:419665 [wandb_run.py:_redirect():1827] Redirects installed.
+2025-04-24 10:50:56,093 INFO    MainThread:419665 [wandb_init.py:init():732] run started, returning control to user process
+2025-04-24 14:48:13,199 INFO    MainThread:419665 [wandb_run.py:_finish():1680] finishing run md5121-new-york-university/tacotron2/m6p9uq6t
+2025-04-24 14:48:13,201 INFO    MainThread:419665 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2025-04-24 14:48:13,210 INFO    MainThread:419665 [wandb_run.py:_restore():1834] restore
+2025-04-24 14:48:15,774 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 1001
+}
+
+2025-04-24 14:48:16,189 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 1001
+}
+
+2025-04-24 14:48:17,090 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,191 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,293 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,394 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,496 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1001
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,597 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 34420
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,699 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,800 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:17,902 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:18,003 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:18,105 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:18,206 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:18,308 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:19,121 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+
+2025-04-24 14:48:19,768 INFO    MainThread:419665 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 39410
+  total_bytes: 39410
+}
+local_info {
+}
+
+2025-04-24 14:48:20,969 INFO    MainThread:419665 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2025-04-24 14:48:20,971 INFO    MainThread:419665 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2025-04-24 14:48:20,976 INFO    MainThread:419665 [wandb_run.py:_footer_sync_info():3055] logging synced files

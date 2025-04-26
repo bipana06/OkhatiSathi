@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<ipython-input-8-324c4e357ba3>", line 28, in <module>
+    train(output_directory,
+NameError: name 'output_directory' is not defined
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+An error occurred during training: name 'output_directory' is not defined
+Using device: cuda
+Librosa version: 0.9.2
+Checkpoints will be saved to: ./outdir

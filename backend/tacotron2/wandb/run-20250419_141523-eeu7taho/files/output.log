@@ -1,0 +1,128 @@
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+Epoch: 0
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Train loss 0 45.240196 Grad Norm 14.126908 1.81s/it
+Validation loss 0: 33.322111
+Saving model and optimizer state at iteration 0 to ./outdir/checkpoint_0
+Train loss 1 32.112587 Grad Norm 20.019974 1.63s/it
+Train loss 2 18.131550 Grad Norm 19.667904 1.80s/it
+Train loss 3 8.013471 Grad Norm 11.869059 1.39s/it
+Train loss 4 5.241538 Grad Norm 7.591643 2.09s/it
+Train loss 5 5.310669 Grad Norm 9.105079 1.71s/it
+Train loss 6 6.754581 Grad Norm 12.537407 2.50s/it
+Train loss 7 5.010523 Grad Norm 7.935598 2.05s/it
+Train loss 8 4.456411 Grad Norm 5.737403 2.59s/it
+Train loss 9 4.210771 Grad Norm 5.390749 2.79s/it
+Train loss 10 5.298602 Grad Norm 5.963709 1.16s/it
+Train loss 11 4.315283 Grad Norm 4.180867 1.15s/it
+Train loss 12 3.973283 Grad Norm 2.706884 2.26s/it
+Train loss 13 3.867267 Grad Norm 3.550936 2.52s/it
+Train loss 14 3.751759 Grad Norm 2.942124 1.79s/it
+Train loss 15 4.510273 Grad Norm 5.634636 1.88s/it
+Train loss 16 4.772630 Grad Norm 3.674539 2.05s/it
+Train loss 17 3.867604 Grad Norm 3.999687 2.64s/it
+Train loss 18 4.353779 Grad Norm 3.410410 0.97s/it
+Train loss 19 3.914145 Grad Norm 2.649852 1.34s/it
+Train loss 20 4.196230 Grad Norm 2.882758 1.80s/it
+Train loss 21 4.635984 Grad Norm 3.757682 0.90s/it
+Train loss 22 4.964474 Grad Norm 4.331034 1.51s/it
+Train loss 23 4.292935 Grad Norm 5.909482 1.89s/it
+Train loss 24 3.849551 Grad Norm 5.233109 1.83s/it
+Train loss 25 3.891958 Grad Norm 3.138219 1.93s/it
+Train loss 26 3.446656 Grad Norm 2.636628 1.89s/it
+Train loss 27 3.231672 Grad Norm 1.959209 2.23s/it
+Train loss 28 4.604593 Grad Norm 3.617592 1.24s/it
+Train loss 29 3.814175 Grad Norm 5.309466 1.14s/it
+Train loss 30 4.066319 Grad Norm 3.484823 1.12s/it
+Train loss 31 3.570868 Grad Norm 3.553468 1.54s/it
+Train loss 32 3.769068 Grad Norm 4.073612 0.83s/it
+Train loss 33 3.393044 Grad Norm 8.173109 2.04s/it
+Train loss 34 3.436659 Grad Norm 5.873352 2.94s/it
+Train loss 35 2.610425 Grad Norm 2.554477 2.49s/it
+Train loss 36 4.496060 Grad Norm 9.317981 1.78s/it
+Train loss 37 4.337034 Grad Norm 6.722262 1.04s/it
+Exception in thread ChkStopThr:
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 170, in check_status
+    status_response = self._interface.communicate_stop_status()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 127, in communicate_stop_status
+    resp = self._communicate_stop_status(status)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 395, in _communicate_stop_status
+    resp = self._communicate(req, local=True)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Exception in thread NetStatThr:
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 152, in check_network_status
+    status_response = self._interface.communicate_network_status()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface.py", line 138, in communicate_network_status
+    resp = self._communicate_network_status(status)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 405, in _communicate_network_status
+    resp = self._communicate(req, local=True)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 527, in init
+    self._wl._global_run_stack[-1].finish()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 256, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1673, in finish
+    return self._finish(exit_code, quiet)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1679, in _finish
+    tel.feature.finish = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Problem at: <ipython-input-23-b83e5e1a4ed6> 7 <module>
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Abnormal program exit
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 186, in setup
+    tel.feature.set_init_tags = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Abnormal program exit

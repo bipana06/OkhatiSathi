@@ -1,0 +1,19 @@
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+An error occurred during training:
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Traceback (most recent call last):
+  File "<ipython-input-16-fdbba75c9eb9>", line 36, in <module>
+    hparams=hparams
+  File "/scratch/md5121/okhatisathi/tacotron2/train.py", line 197, in train
+    checkpoint_path, model, optimizer)
+  File "/scratch/md5121/okhatisathi/tacotron2/train.py", line 100, in load_checkpoint
+    assert os.path.isfile(checkpoint_path)
+AssertionError

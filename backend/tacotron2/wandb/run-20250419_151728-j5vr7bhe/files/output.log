@@ -1,0 +1,431 @@
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Loading checkpoint './outdir/checkpoint_700'
+Loaded checkpoint './outdir/checkpoint_700' from iteration 700
+Epoch: 3
+Train loss 701 1.720455 Grad Norm 3.831561 1.70s/it
+Train loss 702 1.480650 Grad Norm 4.371102 1.52s/it
+Train loss 703 1.558854 Grad Norm 1.545029 1.45s/it
+Train loss 704 1.431370 Grad Norm 3.474489 1.30s/it
+Train loss 705 1.446344 Grad Norm 4.260997 2.01s/it
+Train loss 706 1.099577 Grad Norm 1.968887 1.64s/it
+Train loss 707 1.576947 Grad Norm 1.522738 2.42s/it
+Train loss 708 1.596478 Grad Norm 4.602983 1.95s/it
+Train loss 709 1.116853 Grad Norm 2.661258 2.69s/it
+Train loss 710 1.334807 Grad Norm 4.129180 2.70s/it
+Train loss 711 1.493064 Grad Norm 1.287012 1.12s/it
+Train loss 712 1.441512 Grad Norm 3.198220 1.11s/it
+Train loss 713 1.167107 Grad Norm 2.788103 2.16s/it
+Train loss 714 1.167307 Grad Norm 1.152710 2.26s/it
+Train loss 715 1.210362 Grad Norm 1.429599 1.72s/it
+Train loss 716 1.342678 Grad Norm 1.158351 1.77s/it
+Train loss 717 1.665832 Grad Norm 1.787407 1.83s/it
+Train loss 718 1.286557 Grad Norm 0.962577 2.71s/it
+Train loss 719 1.394274 Grad Norm 1.630776 0.95s/it
+Train loss 720 1.359425 Grad Norm 2.143359 1.31s/it
+Train loss 721 1.558184 Grad Norm 2.429134 1.72s/it
+Train loss 722 1.712687 Grad Norm 1.654074 0.90s/it
+Train loss 723 2.300243 Grad Norm 5.634296 1.49s/it
+Train loss 724 1.716038 Grad Norm 2.833734 1.82s/it
+Train loss 725 1.409629 Grad Norm 1.816324 1.78s/it
+Train loss 726 1.472589 Grad Norm 1.451186 1.85s/it
+Train loss 727 1.438443 Grad Norm 1.308478 1.80s/it
+Train loss 728 1.317412 Grad Norm 0.930245 2.01s/it
+Train loss 729 2.001580 Grad Norm 2.095678 1.31s/it
+Train loss 730 1.394070 Grad Norm 1.954214 1.10s/it
+Train loss 731 1.542436 Grad Norm 1.754265 1.07s/it
+Train loss 732 1.510999 Grad Norm 1.358197 1.46s/it
+Train loss 733 1.580425 Grad Norm 2.057261 0.79s/it
+Train loss 734 1.530314 Grad Norm 3.488932 1.93s/it
+Train loss 735 1.304032 Grad Norm 1.887221 2.78s/it
+Train loss 736 1.108716 Grad Norm 2.946634 2.35s/it
+Train loss 737 2.135921 Grad Norm 5.808154 1.70s/it
+Train loss 738 1.751245 Grad Norm 2.538831 1.00s/it
+Train loss 739 1.451158 Grad Norm 3.929191 1.20s/it
+Train loss 740 1.768648 Grad Norm 7.870054 1.39s/it
+Train loss 741 1.584635 Grad Norm 3.388888 1.22s/it
+Train loss 742 1.287979 Grad Norm 1.712683 1.69s/it
+Train loss 743 1.304429 Grad Norm 2.553705 2.12s/it
+Train loss 744 1.881616 Grad Norm 2.441434 1.79s/it
+Train loss 745 1.681990 Grad Norm 5.210132 0.99s/it
+Train loss 746 1.193932 Grad Norm 1.206696 2.16s/it
+Train loss 747 1.517762 Grad Norm 1.732310 2.09s/it
+Train loss 748 1.140932 Grad Norm 1.273643 1.41s/it
+Train loss 749 1.326583 Grad Norm 1.306653 1.89s/it
+Train loss 750 1.356019 Grad Norm 1.617242 1.51s/it
+Train loss 751 1.605241 Grad Norm 3.662808 1.24s/it
+Train loss 752 1.302490 Grad Norm 1.184542 1.64s/it
+Train loss 753 2.272369 Grad Norm 2.001924 1.21s/it
+Train loss 754 1.437233 Grad Norm 3.589974 1.42s/it
+Train loss 755 1.612263 Grad Norm 3.533860 1.44s/it
+Train loss 756 1.422971 Grad Norm 1.958483 1.36s/it
+Train loss 757 1.259755 Grad Norm 2.975079 2.22s/it
+Train loss 758 1.986913 Grad Norm 6.505431 1.51s/it
+Train loss 759 1.552760 Grad Norm 3.899480 1.83s/it
+Train loss 760 1.674189 Grad Norm 1.970884 1.85s/it
+Train loss 761 1.188718 Grad Norm 1.613626 1.85s/it
+Train loss 762 1.140920 Grad Norm 1.019315 1.91s/it
+Train loss 763 1.507536 Grad Norm 1.260122 1.24s/it
+Train loss 764 1.106999 Grad Norm 1.174035 1.69s/it
+Train loss 765 1.124064 Grad Norm 1.124021 2.85s/it
+Train loss 766 1.440361 Grad Norm 2.235021 1.66s/it
+Train loss 767 2.075486 Grad Norm 6.394802 1.46s/it
+Train loss 768 1.228912 Grad Norm 1.293803 2.42s/it
+Train loss 769 1.377328 Grad Norm 2.580569 1.58s/it
+Train loss 770 1.494983 Grad Norm 2.586646 2.11s/it
+Train loss 771 1.331776 Grad Norm 1.605699 1.98s/it
+Train loss 772 1.448949 Grad Norm 2.092818 1.69s/it
+Train loss 773 1.369354 Grad Norm 1.667420 2.08s/it
+Train loss 774 1.404090 Grad Norm 1.272880 1.15s/it
+Train loss 775 1.310251 Grad Norm 1.184800 1.78s/it
+Train loss 776 1.206716 Grad Norm 0.999574 2.09s/it
+Train loss 777 1.495333 Grad Norm 1.291470 1.78s/it
+Train loss 778 1.441102 Grad Norm 1.341629 1.08s/it
+Train loss 779 1.199767 Grad Norm 1.474309 1.61s/it
+Train loss 780 2.295484 Grad Norm 2.289443 0.64s/it
+Train loss 781 1.613069 Grad Norm 1.238443 1.75s/it
+Train loss 782 1.003088 Grad Norm 1.154058 2.01s/it
+Train loss 783 1.446188 Grad Norm 2.550902 1.82s/it
+Train loss 784 1.347825 Grad Norm 1.881827 1.93s/it
+Train loss 785 1.605230 Grad Norm 1.504874 0.91s/it
+Train loss 786 1.615205 Grad Norm 1.401896 1.70s/it
+Train loss 787 1.096520 Grad Norm 1.692677 2.92s/it
+Train loss 788 1.412748 Grad Norm 1.295075 1.75s/it
+Train loss 789 1.430443 Grad Norm 3.286066 1.26s/it
+Train loss 790 1.258769 Grad Norm 2.826343 1.75s/it
+Train loss 791 1.085096 Grad Norm 1.547318 1.86s/it
+Train loss 792 1.401373 Grad Norm 2.792091 2.50s/it
+Train loss 793 1.342988 Grad Norm 3.822572 1.13s/it
+Train loss 794 1.549055 Grad Norm 1.505740 1.25s/it
+Train loss 795 1.642709 Grad Norm 3.837781 2.36s/it
+Train loss 796 1.492814 Grad Norm 2.252977 2.15s/it
+Train loss 797 1.259457 Grad Norm 1.096130 1.91s/it
+Train loss 798 1.279673 Grad Norm 1.290411 1.75s/it
+Train loss 799 1.531593 Grad Norm 1.537964 2.41s/it
+Train loss 800 1.159249 Grad Norm 1.208035 1.84s/it
+Validation loss 800:  1.429884
+Saving model and optimizer state at iteration 800 to ./outdir/checkpoint_800
+Train loss 801 1.341864 Grad Norm 1.846585 1.37s/it
+Train loss 802 1.152490 Grad Norm 1.792667 1.91s/it
+Train loss 803 1.178480 Grad Norm 1.153526 1.95s/it
+Train loss 804 1.515257 Grad Norm 1.755158 1.34s/it
+Train loss 805 1.159526 Grad Norm 1.269891 2.35s/it
+Train loss 806 1.164333 Grad Norm 1.062594 1.95s/it
+Train loss 807 1.774897 Grad Norm 4.472935 1.81s/it
+Train loss 808 1.163221 Grad Norm 2.366740 2.15s/it
+Train loss 809 1.566285 Grad Norm 1.450366 2.24s/it
+Train loss 810 1.723156 Grad Norm 2.052435 2.12s/it
+Train loss 811 1.440460 Grad Norm 1.410938 1.72s/it
+Train loss 812 1.846609 Grad Norm 1.381635 1.00s/it
+Train loss 813 1.460985 Grad Norm 1.565136 1.61s/it
+Train loss 814 1.182703 Grad Norm 1.139089 1.76s/it
+Train loss 815 1.475326 Grad Norm 1.938320 1.82s/it
+Train loss 816 1.243417 Grad Norm 2.094788 1.75s/it
+Train loss 817 1.333274 Grad Norm 1.688010 1.73s/it
+Train loss 818 1.510618 Grad Norm 2.611782 2.06s/it
+Train loss 819 1.203943 Grad Norm 2.859705 1.70s/it
+Train loss 820 1.143735 Grad Norm 1.470810 1.67s/it
+Train loss 821 1.162883 Grad Norm 2.479711 2.35s/it
+Train loss 822 1.403319 Grad Norm 3.605577 2.35s/it
+Train loss 823 1.596360 Grad Norm 3.385725 2.14s/it
+Train loss 824 1.707435 Grad Norm 1.958228 1.02s/it
+Train loss 825 1.594670 Grad Norm 2.327307 1.50s/it
+Train loss 826 1.885151 Grad Norm 3.311147 2.44s/it
+Train loss 827 1.450000 Grad Norm 2.244387 1.55s/it
+Train loss 828 1.989545 Grad Norm 2.173353 1.85s/it
+Train loss 829 1.418272 Grad Norm 2.103227 2.13s/it
+Train loss 830 1.219787 Grad Norm 1.327817 1.33s/it
+Train loss 831 1.842232 Grad Norm 4.248299 1.52s/it
+Train loss 832 1.492510 Grad Norm 1.294605 1.92s/it
+Train loss 833 1.359789 Grad Norm 1.085330 1.45s/it
+Train loss 834 1.454921 Grad Norm 2.961052 1.46s/it
+Train loss 835 1.573853 Grad Norm 2.117759 0.91s/it
+Train loss 836 1.532107 Grad Norm 1.520419 1.43s/it
+Train loss 837 1.395190 Grad Norm 1.956721 0.93s/it
+Train loss 838 1.032024 Grad Norm 2.098199 2.10s/it
+Train loss 839 1.057200 Grad Norm 1.338143 2.59s/it
+Train loss 840 1.589019 Grad Norm 2.748068 1.87s/it
+Train loss 841 1.671185 Grad Norm 4.250797 1.72s/it
+Train loss 842 1.120161 Grad Norm 1.436472 2.20s/it
+Train loss 843 1.205959 Grad Norm 1.417253 1.74s/it
+Train loss 844 1.004823 Grad Norm 1.427709 2.26s/it
+Train loss 845 1.395441 Grad Norm 2.403005 1.65s/it
+Train loss 846 1.184689 Grad Norm 1.985006 1.39s/it
+Train loss 847 1.527241 Grad Norm 3.442329 1.26s/it
+Train loss 848 1.065711 Grad Norm 1.455724 1.78s/it
+Train loss 849 1.416826 Grad Norm 2.381388 1.27s/it
+Train loss 850 1.554070 Grad Norm 2.681118 1.51s/it
+Train loss 851 1.445184 Grad Norm 2.370414 1.86s/it
+Train loss 852 1.794641 Grad Norm 3.467368 1.08s/it
+Train loss 853 1.745109 Grad Norm 2.255617 1.89s/it
+Train loss 854 1.338489 Grad Norm 1.416249 1.80s/it
+Train loss 855 1.365865 Grad Norm 1.583896 1.35s/it
+Train loss 856 1.358999 Grad Norm 1.648317 0.92s/it
+Train loss 857 1.311277 Grad Norm 2.252331 1.29s/it
+Train loss 858 1.650571 Grad Norm 1.532458 1.28s/it
+Train loss 859 1.751124 Grad Norm 3.100925 1.71s/it
+Train loss 860 1.436379 Grad Norm 1.703625 1.65s/it
+Train loss 861 1.129914 Grad Norm 1.595410 2.00s/it
+Train loss 862 1.552599 Grad Norm 2.727195 2.60s/it
+Train loss 863 1.382904 Grad Norm 1.266631 1.44s/it
+Train loss 864 1.132182 Grad Norm 2.756373 1.99s/it
+Train loss 865 1.526839 Grad Norm 1.764085 1.77s/it
+Train loss 866 1.364710 Grad Norm 1.107235 2.48s/it
+Train loss 867 1.062313 Grad Norm 1.053609 2.19s/it
+Train loss 868 1.283789 Grad Norm 1.202679 2.39s/it
+Train loss 869 1.826847 Grad Norm 2.138833 1.30s/it
+Train loss 870 1.238734 Grad Norm 2.398131 1.29s/it
+Train loss 871 1.184285 Grad Norm 1.607568 1.93s/it
+Train loss 872 1.339710 Grad Norm 1.225165 1.52s/it
+Train loss 873 1.317571 Grad Norm 1.324456 1.50s/it
+Train loss 874 1.595332 Grad Norm 2.145007 1.38s/it
+Train loss 875 1.185629 Grad Norm 1.952823 1.94s/it
+Train loss 876 1.589910 Grad Norm 1.940784 2.00s/it
+Train loss 877 1.399844 Grad Norm 1.611164 2.23s/it
+Train loss 878 1.522276 Grad Norm 1.668086 1.45s/it
+Train loss 879 1.646121 Grad Norm 3.410415 1.70s/it
+Epoch: 4
+Train loss 880 1.321267 Grad Norm 0.903442 1.46s/it
+Train loss 881 1.517407 Grad Norm 1.415499 2.06s/it
+Train loss 882 1.008372 Grad Norm 1.167594 1.86s/it
+Train loss 883 1.320975 Grad Norm 1.407858 2.35s/it
+Train loss 884 1.315520 Grad Norm 1.603329 1.96s/it
+Train loss 885 1.533314 Grad Norm 1.887342 1.78s/it
+Train loss 886 1.188233 Grad Norm 1.503442 1.15s/it
+Train loss 887 1.321675 Grad Norm 2.117178 1.94s/it
+Train loss 888 1.116821 Grad Norm 1.835739 1.88s/it
+Train loss 889 1.294532 Grad Norm 1.563939 1.62s/it
+Train loss 890 1.502212 Grad Norm 3.441224 1.76s/it
+Train loss 891 1.044711 Grad Norm 2.098018 2.24s/it
+Train loss 892 1.731273 Grad Norm 1.805213 0.97s/it
+Train loss 893 1.766038 Grad Norm 2.332318 1.62s/it
+Train loss 894 1.106340 Grad Norm 1.024775 2.00s/it
+Train loss 895 1.300590 Grad Norm 1.312551 1.66s/it
+Train loss 896 1.198557 Grad Norm 2.445212 1.76s/it
+Train loss 897 1.234351 Grad Norm 1.623741 2.00s/it
+Train loss 898 1.417098 Grad Norm 1.698670 1.33s/it
+Train loss 899 1.288662 Grad Norm 1.084796 2.23s/it
+Train loss 900 1.570832 Grad Norm 3.044892 1.55s/it
+Validation loss 900:  1.404904
+Saving model and optimizer state at iteration 900 to ./outdir/checkpoint_900
+Train loss 901 1.483806 Grad Norm 1.662262 0.98s/it
+Train loss 902 1.133129 Grad Norm 1.863061 1.90s/it
+Train loss 903 1.564532 Grad Norm 1.308329 1.64s/it
+Train loss 904 1.331856 Grad Norm 2.022298 1.71s/it
+Train loss 905 1.077869 Grad Norm 1.495619 1.98s/it
+Train loss 906 1.252625 Grad Norm 2.021029 2.18s/it
+Train loss 907 1.492117 Grad Norm 2.949240 1.41s/it
+Train loss 908 1.370098 Grad Norm 2.006658 1.65s/it
+Train loss 909 1.354062 Grad Norm 3.574521 1.55s/it
+Train loss 910 1.203427 Grad Norm 2.172216 2.09s/it
+Train loss 911 1.371284 Grad Norm 2.206985 1.20s/it
+Train loss 912 1.746597 Grad Norm 1.814738 1.48s/it
+Train loss 913 1.203448 Grad Norm 1.389368 1.76s/it
+Train loss 914 1.407113 Grad Norm 1.825336 1.85s/it
+Train loss 915 1.250628 Grad Norm 1.735933 1.28s/it
+Train loss 916 1.414063 Grad Norm 2.797439 1.81s/it
+Train loss 917 1.173750 Grad Norm 1.451522 2.06s/it
+Train loss 918 1.220405 Grad Norm 1.224031 2.17s/it
+Train loss 919 1.440891 Grad Norm 1.908074 1.83s/it
+Train loss 920 1.291282 Grad Norm 1.312986 1.91s/it
+Train loss 921 1.548993 Grad Norm 1.683333 2.76s/it
+Train loss 922 1.556857 Grad Norm 2.317396 1.50s/it
+Train loss 923 1.475635 Grad Norm 1.079365 1.83s/it
+Train loss 924 1.256250 Grad Norm 0.987718 1.43s/it
+Train loss 925 0.964311 Grad Norm 1.457531 2.46s/it
+Train loss 926 1.198483 Grad Norm 1.445263 1.59s/it
+Train loss 927 1.497316 Grad Norm 3.665133 1.89s/it
+Train loss 928 1.336513 Grad Norm 2.260782 1.78s/it
+Train loss 929 1.446328 Grad Norm 2.869217 1.31s/it
+Train loss 930 1.634944 Grad Norm 3.552739 1.92s/it
+Train loss 931 1.403194 Grad Norm 1.989879 1.48s/it
+Train loss 932 1.681192 Grad Norm 1.956622 1.93s/it
+Train loss 933 1.157012 Grad Norm 1.585887 2.47s/it
+Train loss 934 1.312822 Grad Norm 1.548444 1.73s/it
+Train loss 935 1.290021 Grad Norm 1.385665 1.47s/it
+Train loss 936 1.074682 Grad Norm 2.465257 2.31s/it
+Train loss 937 1.560593 Grad Norm 2.499138 1.33s/it
+Train loss 938 1.153917 Grad Norm 1.238676 2.52s/it
+Train loss 939 1.026229 Grad Norm 3.301291 1.76s/it
+Train loss 940 1.700190 Grad Norm 5.289918 1.48s/it
+Train loss 941 1.938415 Grad Norm 6.200002 1.39s/it
+Train loss 942 1.098444 Grad Norm 1.299702 1.50s/it
+Train loss 943 1.255694 Grad Norm 0.979845 2.17s/it
+Train loss 944 1.400244 Grad Norm 2.381966 2.44s/it
+Train loss 945 1.050537 Grad Norm 1.483857 1.77s/it
+Train loss 946 0.924381 Grad Norm 1.232404 2.65s/it
+Train loss 947 1.465818 Grad Norm 2.234393 1.29s/it
+Train loss 948 1.602132 Grad Norm 2.238700 0.99s/it
+Train loss 949 1.408937 Grad Norm 1.341677 2.54s/it
+Train loss 950 1.174249 Grad Norm 1.347869 2.40s/it
+Train loss 951 1.610774 Grad Norm 1.604093 1.65s/it
+Train loss 952 1.599690 Grad Norm 1.781057 1.18s/it
+Train loss 953 1.617010 Grad Norm 2.313837 1.76s/it
+Train loss 954 1.037892 Grad Norm 1.705912 2.09s/it
+Train loss 955 1.085636 Grad Norm 1.053966 2.47s/it
+Train loss 956 1.343011 Grad Norm 4.130827 1.54s/it
+Train loss 957 1.220109 Grad Norm 1.564145 2.21s/it
+Train loss 958 1.255593 Grad Norm 1.556891 1.93s/it
+Train loss 959 1.408273 Grad Norm 2.697189 2.17s/it
+Train loss 960 1.635268 Grad Norm 1.505529 2.10s/it
+Train loss 961 1.571240 Grad Norm 2.499763 1.82s/it
+Train loss 962 1.504638 Grad Norm 2.562201 1.86s/it
+Train loss 963 1.257194 Grad Norm 1.197037 2.10s/it
+Train loss 964 1.043232 Grad Norm 1.801915 1.72s/it
+Train loss 965 1.298871 Grad Norm 1.990559 1.43s/it
+Train loss 966 1.361940 Grad Norm 1.737300 0.96s/it
+Train loss 967 1.264238 Grad Norm 1.075482 1.68s/it
+Train loss 968 1.600677 Grad Norm 3.287076 1.19s/it
+Train loss 969 1.312137 Grad Norm 1.861755 0.95s/it
+Train loss 970 1.332279 Grad Norm 2.426754 1.67s/it
+Train loss 971 1.379936 Grad Norm 2.944544 1.84s/it
+Train loss 972 1.292506 Grad Norm 1.371869 1.72s/it
+Train loss 973 1.250125 Grad Norm 2.388933 1.82s/it
+Train loss 974 1.288936 Grad Norm 2.341216 1.08s/it
+Train loss 975 1.561045 Grad Norm 2.555725 0.92s/it
+Train loss 976 1.446107 Grad Norm 1.782665 1.76s/it
+Train loss 977 1.348903 Grad Norm 3.720934 1.74s/it
+Train loss 978 1.264640 Grad Norm 2.505359 1.88s/it
+Train loss 979 1.438783 Grad Norm 1.111606 1.82s/it
+Train loss 980 1.352435 Grad Norm 2.785118 2.26s/it
+Train loss 981 1.758051 Grad Norm 5.052539 1.41s/it
+Train loss 982 1.371361 Grad Norm 3.511769 1.08s/it
+Train loss 983 1.252635 Grad Norm 1.259353 2.48s/it
+Train loss 984 1.260857 Grad Norm 1.484677 2.02s/it
+Train loss 985 1.071954 Grad Norm 1.189794 1.86s/it
+Train loss 986 1.207672 Grad Norm 1.147596 1.80s/it
+Train loss 987 1.661209 Grad Norm 3.222279 1.69s/it
+Train loss 988 1.289672 Grad Norm 1.531181 1.34s/it
+Train loss 989 0.972399 Grad Norm 1.397569 1.15s/it
+Train loss 990 1.372590 Grad Norm 2.254238 1.44s/it
+Train loss 991 1.350137 Grad Norm 2.878006 1.34s/it
+Train loss 992 0.960609 Grad Norm 1.006114 1.90s/it
+Train loss 993 1.044231 Grad Norm 1.251988 1.39s/it
+Train loss 994 1.338901 Grad Norm 2.427518 1.62s/it
+Train loss 995 1.275885 Grad Norm 1.405256 2.06s/it
+Train loss 996 1.202898 Grad Norm 0.982950 1.22s/it
+Train loss 997 1.600340 Grad Norm 1.423892 1.14s/it
+Train loss 998 1.044451 Grad Norm 1.108219 1.57s/it
+Train loss 999 1.370283 Grad Norm 2.366248 1.75s/it
+Train loss 1000 1.237634 Grad Norm 1.231657 2.37s/it
+Validation loss 1000:  1.396580
+Saving model and optimizer state at iteration 1000 to ./outdir/checkpoint_1000
+Train loss 1001 1.355572 Grad Norm 3.017207 2.13s/it
+Train loss 1002 1.474552 Grad Norm 2.076128 1.34s/it
+Train loss 1003 1.221873 Grad Norm 1.006051 2.09s/it
+Train loss 1004 1.339879 Grad Norm 1.561536 1.54s/it
+Train loss 1005 1.031068 Grad Norm 1.541889 1.72s/it
+Train loss 1006 1.269179 Grad Norm 1.251601 1.54s/it
+Train loss 1007 1.159510 Grad Norm 2.426150 1.46s/it
+Train loss 1008 1.243436 Grad Norm 2.823889 1.67s/it
+Train loss 1009 1.271076 Grad Norm 2.226920 1.77s/it
+Train loss 1010 1.223255 Grad Norm 1.845522 2.36s/it
+Train loss 1011 1.562089 Grad Norm 2.676451 1.22s/it
+Train loss 1012 1.278059 Grad Norm 2.850903 1.22s/it
+Train loss 1013 1.346588 Grad Norm 1.126927 1.42s/it
+Train loss 1014 1.401664 Grad Norm 3.141636 1.28s/it
+Train loss 1015 1.098770 Grad Norm 2.615031 2.01s/it
+Train loss 1016 1.019804 Grad Norm 1.439478 2.27s/it
+Train loss 1017 0.995816 Grad Norm 1.267266 1.35s/it
+Train loss 1018 1.587456 Grad Norm 4.092431 1.74s/it
+Train loss 1019 1.242720 Grad Norm 1.752716 2.08s/it
+Train loss 1020 1.077019 Grad Norm 1.086133 1.89s/it
+Train loss 1021 1.404251 Grad Norm 2.629353 1.69s/it
+Train loss 1022 1.392885 Grad Norm 1.396350 1.30s/it
+Train loss 1023 1.232477 Grad Norm 1.216951 1.99s/it
+Train loss 1024 1.062524 Grad Norm 1.299857 1.96s/it
+Train loss 1025 0.958044 Grad Norm 0.902137 1.98s/it
+Train loss 1026 1.259350 Grad Norm 0.948188 1.69s/it
+Train loss 1027 1.083369 Grad Norm 2.412730 1.52s/it
+Train loss 1028 1.043072 Grad Norm 1.652843 1.93s/it
+Train loss 1029 1.290116 Grad Norm 1.837347 1.76s/it
+Train loss 1030 1.297294 Grad Norm 3.428466 2.06s/it
+Train loss 1031 1.090809 Grad Norm 2.417594 2.39s/it
+Train loss 1032 1.050151 Grad Norm 1.717666 1.85s/it
+Train loss 1033 1.324474 Grad Norm 2.516885 2.81s/it
+Train loss 1034 1.045980 Grad Norm 2.344033 2.03s/it
+Train loss 1035 1.378693 Grad Norm 2.050769 1.41s/it
+Train loss 1036 1.303127 Grad Norm 1.415075 1.53s/it
+Train loss 1037 1.118683 Grad Norm 1.101057 1.38s/it
+Train loss 1038 1.200672 Grad Norm 1.208359 2.19s/it
+Train loss 1039 1.198975 Grad Norm 1.044562 1.71s/it
+Train loss 1040 1.030608 Grad Norm 1.794087 2.00s/it
+Train loss 1041 1.018168 Grad Norm 1.314921 2.37s/it
+Train loss 1042 1.301682 Grad Norm 1.826231 2.30s/it
+Train loss 1043 1.639830 Grad Norm 1.774225 1.74s/it
+Train loss 1044 1.231825 Grad Norm 1.277133 2.79s/it
+Train loss 1045 1.236558 Grad Norm 1.929403 1.29s/it
+Train loss 1046 1.284554 Grad Norm 1.132186 1.93s/it
+Train loss 1047 1.604971 Grad Norm 1.799175 1.45s/it
+Train loss 1048 1.143589 Grad Norm 1.272171 1.96s/it
+Train loss 1049 1.023772 Grad Norm 1.474261 1.82s/it
+Train loss 1050 1.218897 Grad Norm 1.043563 1.84s/it
+Train loss 1051 1.547888 Grad Norm 2.882982 1.31s/it
+Train loss 1052 1.017586 Grad Norm 1.148203 2.29s/it
+Train loss 1053 1.095883 Grad Norm 1.290072 2.59s/it
+Train loss 1054 1.235984 Grad Norm 1.817721 1.36s/it
+Train loss 1055 1.228290 Grad Norm 1.500229 1.70s/it
+Train loss 1056 1.382684 Grad Norm 3.922789 1.32s/it
+Train loss 1057 1.145996 Grad Norm 2.378262 2.51s/it
+Train loss 1058 1.222901 Grad Norm 2.154526 1.68s/it
+Downloading HiFi-GAN model...
+Downloading...
+From: https://drive.google.com/uc?id=1qpgI41wNXFcH-iKq1Y42JlBC9j0je8PW
+To: /scratch/md5121/okhatisathi/tacotron2/hifigan_universal.pt
+
+
+100%|██████████| 55.8M/55.8M [00:03<00:00, 15.2MB/s]
+HiFi-GAN Download complete.
+Loading HiFi-GAN...
+Removing weight norm...
+HiFi-GAN Loaded.
+Loading Tacotron 2 checkpoint...
+HiFi-GAN model already downloaded.
+Loading HiFi-GAN...
+Removing weight norm...
+HiFi-GAN Loaded.
+Loading Tacotron 2 checkpoint...
+Using device: cuda
+Librosa version: 0.9.2
+Checkpoints will be saved to: ./outdir
+HiFi-GAN model already downloaded.
+Loading HiFi-GAN...
+Removing weight norm...
+HiFi-GAN Loaded.
+Loading Tacotron 2 checkpoint...
+HiFi-GAN model already downloaded.
+Loading HiFi-GAN...
+Removing weight norm...
+HiFi-GAN Loaded.
+Loading Tacotron 2 checkpoint...
+Tacotron 2 Loaded.
+Input Text: नमस्ते संसार
+Warning! Reached max decoder steps
+Generated Audio:
+Input Text: यो अर्को परीक्षण हो
+Warning! Reached max decoder steps
+Generated Audio:
+HiFi-GAN model already downloaded.
+Loading HiFi-GAN...
+Removing weight norm...
+HiFi-GAN Loaded.
+Loading Tacotron 2 checkpoint...
+Tacotron 2 Loaded.
+Loading pronunciation dictionary...
+Loaded 40 entries from dictionary.
+Input Text: नमस्ते संसार
+ARPA Text: नमस्ते संसार;
+Warning! Reached max decoder steps
+Generated Audio:
+Input Text: यो अर्को परीक्षण हो
+ARPA Text: यो अर्को परीक्षण हो;
+Warning! Reached max decoder steps
+Generated Audio:

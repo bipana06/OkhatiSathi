@@ -1,0 +1,47 @@
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Loading checkpoint 'tacotron2_statedict.pt'
+Detected 'module.' prefix in checkpoint keys. Removing prefix...
+Model state loaded.
+Warning: Optimizer state not found in checkpoint. Starting optimizer from scratch.
+Warning: Learning rate not found in checkpoint.
+Warning: Iteration count not found in checkpoint. Starting from iteration 0.
+Loaded checkpoint 'tacotron2_statedict.pt' from iteration 0
+Epoch: 0
+Train loss 1 2.035280 Grad Norm 21.226589 3.65s/it
+Train loss 2 1.502469 Grad Norm 9.675964 2.94s/it
+Train loss 3 1.657752 Grad Norm 8.153120 2.25s/it
+Train loss 4 1.032526 Grad Norm 4.396176 3.25s/it
+Train loss 5 1.217817 Grad Norm 35.909931 2.50s/it
+Train loss 6 1.146788 Grad Norm 2.892606 2.76s/it
+Train loss 7 1.005854 Grad Norm 4.090389 3.13s/it
+Train loss 8 1.032270 Grad Norm 2.084622 2.42s/it
+Train loss 9 0.837964 Grad Norm 1.504929 3.33s/it
+Train loss 10 0.935288 Grad Norm 3.033673 2.86s/it
+Train loss 11 1.017233 Grad Norm 1.375004 2.54s/it
+Train loss 12 0.932896 Grad Norm 1.362169 2.82s/it
+Train loss 13 0.721326 Grad Norm 0.883560 3.11s/it
+Train loss 14 0.783584 Grad Norm 0.831893 2.55s/it
+Train loss 15 0.962761 Grad Norm 0.940880 2.06s/it
+Train loss 16 0.759727 Grad Norm 0.848278 2.95s/it
+Epoch: 1
+Train loss 17 0.795668 Grad Norm 0.706719 2.26s/it
+Train loss 18 0.731482 Grad Norm 0.665234 2.90s/it
+Train loss 19 0.610171 Grad Norm 0.556710 3.16s/it
+Train loss 20 0.646767 Grad Norm 0.536598 2.89s/it
+Train loss 21 0.826976 Grad Norm 0.738076 2.25s/it
+Train loss 22 0.630088 Grad Norm 0.444651 2.98s/it
+Train loss 23 0.690194 Grad Norm 0.432425 2.86s/it
+Train loss 24 0.643393 Grad Norm 0.517235 3.08s/it
+Train loss 25 0.703402 Grad Norm 0.656625 2.39s/it
+Train loss 26 0.634964 Grad Norm 0.522919 3.00s/it
+Train loss 27 0.635504 Grad Norm 0.602933 2.90s/it
+Train loss 28 0.634140 Grad Norm 0.561999 2.60s/it

@@ -1,0 +1,14 @@
+wandb_version: 1
+
+batch_size:
+  value: 16
+early_stopping_patience:
+  value: 10
+learning_rate:
+  value: 3.280342343898514e-05
+p_attention_dropout:
+  value: 0.05
+p_decoder_dropout:
+  value: 0.1
+weight_decay:
+  value: 1.1904828530905322e-06

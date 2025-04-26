@@ -1,0 +1,31 @@
+/var/spool/slurmd/job10516115/slurm_script: line 20: nvcc: command not found
+No Modulefiles Currently Loaded.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+wandb: Starting wandb agent 🕵️
+2025-04-20 23:09:47,226 - wandb.wandb_agent - INFO - Running runs: []
+2025-04-20 23:09:47,680 - wandb.wandb_agent - INFO - Agent received command: run
+2025-04-20 23:09:47,680 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	early_stopping_patience: 15
+	learning_rate: 0.000789435978597886
+	p_attention_dropout: 0.05
+	p_decoder_dropout: 0.15
+	weight_decay: 9.704874430322708e-06
+2025-04-20 23:09:47,683 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python goat_finetune.py --batch_size=32 --early_stopping_patience=15 --learning_rate=0.000789435978597886 --p_attention_dropout=0.05 --p_decoder_dropout=0.15 --weight_decay=9.704874430322708e-06
+2025-04-20 23:09:52,695 - wandb.wandb_agent - INFO - Running runs: ['4df1w4d6']
+wandb: Currently logged in as: md5121 (md5121-new-york-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.21
+wandb: Run data is saved locally in /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250420_230954-4df1w4d6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run peachy-sweep-33
+wandb: ⭐️ View project at https://wandb.ai/md5121-new-york-university/tacotron2
+wandb: 🧹 View sweep at https://wandb.ai/md5121-new-york-university/tacotron2/sweeps/w4oyzcwb
+wandb: 🚀 View run at https://wandb.ai/md5121-new-york-university/tacotron2/runs/4df1w4d6
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)

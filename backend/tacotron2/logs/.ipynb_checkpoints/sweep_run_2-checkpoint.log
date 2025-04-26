@@ -1,0 +1,133 @@
+--- Environment Info (Sweep Run: 2) ---
+Hostname: dn006
+GPU Info:
+Sun Apr 20 23:02:46 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB           Off | 00000000:86:00.0 Off |                    0 |
+| N/A   31C    P0              25W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+CUDA Toolkit (nvcc):
+nvcc not found
+Loaded Modules:
+Python Path: /home/md5121/.conda/envs/t2env/bin/python
+PyTorch Info:
+PyTorch Version: 1.10.2
+CUDA available: True
+CUDA version built with: 11.3
+Device Count: 1
+Current Device: 0
+Device Name: Tesla V100-PCIE-32GB
+Device Capability: (7, 0)
+Arch List: ['sm_37', 'sm_50', 'sm_60', 'sm_61', 'sm_70', 'sm_75', 'sm_80', 'sm_86', 'compute_37']
+-------------------------
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/condabin/conda
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/bin/conda
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/bin/conda-env
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/bin/activate
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/bin/deactivate
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/etc/profile.d/conda.sh
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/etc/fish/conf.d/conda.fish
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/shell/condabin/Conda.psm1
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/shell/condabin/conda-hook.ps1
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /share/apps/NYUAD5/miniconda/3-4.11.0/etc/profile.d/conda.csh
+no change     /home/md5121/.bashrc
+No action taken.
+Starting W&B agent (Sweep Run: 2)...
+Using device: cuda
+Python Paths: ['/scratch/md5121/okhatisathi/tacotron2', '/home/md5121/.conda/envs/t2env/lib/python36.zip', '/home/md5121/.conda/envs/t2env/lib/python3.6', '/home/md5121/.conda/envs/t2env/lib/python3.6/lib-dynload', '/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages', '/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/IPython/extensions', '.']
+Librosa version: 0.9.2
+Base Output Directory for Sweeps: ./outdir_sweep
+Training Files: ./filelists/train_list.txt
+Validation Files: ./filelists/val_list.txt
+Pretrained Checkpoint for Warm Start: tacotron2_statedict.pt
+Successfully imported train function from train.py
+Script started by W&B Agent (or directly without --test). Running sweep function...
+--- Starting W&B Run: summer-sweep-31 (ID: 1eewiug0) ---
+Sweep Configuration for this run:
+  Overriding hparams.batch_size: 32 -> 16
+  Overriding hparams.early_stopping_patience: 10 -> 8
+  Overriding hparams.learning_rate: 0.0001 -> 1.0535143575241057e-05
+  Overriding hparams.p_attention_dropout: 0.1 -> 0.05
+  Overriding hparams.p_decoder_dropout: 0.1 -> 0.1
+  Overriding hparams.weight_decay: 1e-06 -> 1.783354147376449e-06
+Run-specific Output Directory: ./outdir_sweep/1eewiug0
+
+--- Final HParams for Training Run ---
+  epochs: 200
+  seed: 1234
+  distributed_run: False
+  n_gpus: 1
+  rank: 0
+  group_name: group_name
+  cudnn_enabled: True
+  cudnn_benchmark: False
+  fp16_run: False
+  load_mel_from_disk: False
+  training_files: ./filelists/train_list.txt
+  validation_files: ./filelists/val_list.txt
+  text_cleaners: ['transliteration_cleaners']
+  num_workers: 4
+  pin_memory: True
+  max_wav_value: 32768.0
+  sampling_rate: 22050
+  filter_length: 1024
+  hop_length: 256
+  win_length: 1024
+  n_mel_channels: 80
+  mel_fmin: 0.0
+  mel_fmax: 8000.0
+  n_symbols: 148
+  symbols_embedding_dim: 512
+  encoder_kernel_size: 5
+  encoder_n_convolutions: 3
+  encoder_embedding_dim: 512
+  n_frames_per_step: 1
+  decoder_rnn_dim: 1024
+  prenet_dim: 256
+  max_decoder_steps: 1000
+  gate_threshold: 0.5
+  p_attention_dropout: 0.05
+  p_decoder_dropout: 0.1
+  attention_rnn_dim: 1024
+  attention_dim: 128
+  attention_location_n_filters: 32
+  attention_location_kernel_size: 31
+  postnet_embedding_dim: 512
+  postnet_kernel_size: 5
+  postnet_n_convolutions: 5
+  use_saved_learning_rate: False
+  learning_rate: 1.0535143575241057e-05
+  weight_decay: 1.783354147376449e-06
+  grad_clip_thresh: 1.0
+  batch_size: 16
+  mask_padding: True
+  log_interval: 100
+  iters_per_checkpoint: 1000
+  early_stopping_patience: 8
+  min_val_loss_delta: 0.0001
+  ignore_layers: ['embedding.weight']
+--------------------------------------
+
+Calling train function...
+TensorBoard Log directory: ./outdir_sweep/1eewiug0/logs
+Warm starting model from checkpoint 'tacotron2_statedict.pt'
+  Applying warm start: Ignored 1 keys based on ignore_layers. Loading 83 keys.
+Warm start complete. Optimizer and iteration count reset.
+Starting training for 200 epochs...
+--- Epoch: 0 ---

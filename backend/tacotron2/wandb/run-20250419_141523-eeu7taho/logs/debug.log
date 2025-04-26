@@ -1,0 +1,227 @@
+2025-04-19 14:15:23,833 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Configure stats pid to 2625211
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /home/md5121/.config/wandb/settings
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /scratch/md5121/okhatisathi/tacotron2/wandb/settings
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_init.py:_log_setup():461] Logging user logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141523-eeu7taho/logs/debug.log
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_init.py:_log_setup():462] Logging internal logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141523-eeu7taho/logs/debug-internal.log
+2025-04-19 14:15:23,834 INFO    MainThread:2625211 [wandb_init.py:init():495] calling init triggers
+2025-04-19 14:15:23,835 INFO    MainThread:2625211 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {'epochs': 5, 'iters_per_checkpoint': 100, 'seed': 1234, 'dynamic_loss_scaling': True, 'fp16_run': False, 'distributed_run': False, 'dist_backend': 'nccl', 'dist_url': 'tcp://localhost:54321', 'cudnn_enabled': True, 'cudnn_benchmark': False, 'ignore_layers': ['embedding.weight'], 'load_mel_from_disk': False, 'training_files': './filelists/train_list.txt', 'validation_files': './filelists/val_list.txt', 'text_cleaners': ['transliteration_cleaners'], 'max_wav_value': 32768.0, 'sampling_rate': 22050, 'filter_length': 1024, 'hop_length': 256, 'win_length': 1024, 'n_mel_channels': 80, 'mel_fmin': 0.0, 'mel_fmax': 8000.0, 'n_symbols': 148, 'symbols_embedding_dim': 512, 'encoder_kernel_size': 5, 'encoder_n_convolutions': 3, 'encoder_embedding_dim': 512, 'n_frames_per_step': 1, 'decoder_rnn_dim': 1024, 'prenet_dim': 256, 'max_decoder_steps': 10000, 'gate_threshold': 0.5, 'p_attention_dropout': 0.1, 'p_decoder_dropout': 0.1, 'attention_rnn_dim': 1024, 'attention_dim': 128, 'attention_location_n_filters': 32, 'attention_location_kernel_size': 31, 'postnet_embedding_dim': 512, 'postnet_kernel_size': 5, 'postnet_n_convolutions': 5, 'use_saved_learning_rate': False, 'learning_rate': 0.001, 'weight_decay': 1e-06, 'grad_clip_thresh': 1.0, 'batch_size': 3, 'mask_padding': True}
+2025-04-19 14:15:23,835 INFO    MainThread:2625211 [wandb_init.py:init():515] re-initializing run, found existing run on stack: tlde805r
+2025-04-19 14:15:23,836 INFO    MainThread:2625211 [wandb_run.py:_finish():1680] finishing run md5121-new-york-university/nepali-tts-hpc-run/tlde805r
+2025-04-19 14:15:23,838 ERROR   MainThread:2625211 [jupyter.py:save_history():427] Run pip install nbformat to save notebook history
+2025-04-19 14:15:23,839 INFO    MainThread:2625211 [jupyter.py:save_ipynb():377] not saving jupyter notebook
+2025-04-19 14:15:23,839 INFO    MainThread:2625211 [wandb_init.py:_jupyter_teardown():393] cleaning up jupyter logic
+2025-04-19 14:15:23,839 INFO    MainThread:2625211 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2025-04-19 14:15:23,840 INFO    MainThread:2625211 [wandb_run.py:_restore():1834] restore
+2025-04-19 14:15:24,331 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 733
+}
+
+2025-04-19 14:15:24,446 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 733
+}
+
+2025-04-19 14:15:24,753 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 733
+}
+
+2025-04-19 14:15:24,907 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,008 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,109 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,210 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,311 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 733
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,412 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24634
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,513 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,614 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,715 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,816 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:25,917 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:26,741 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+
+2025-04-19 14:15:27,377 INFO    MainThread:2625211 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 24662
+  total_bytes: 24662
+}
+local_info {
+}
+
+2025-04-19 14:15:28,518 INFO    MainThread:2625211 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2025-04-19 14:15:28,519 INFO    MainThread:2625211 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2025-04-19 14:15:28,523 INFO    MainThread:2625211 [wandb_run.py:_footer_sync_info():3055] logging synced files
+2025-04-19 14:15:28,529 INFO    MainThread:2625211 [wandb_init.py:init():548] starting backend
+2025-04-19 14:15:28,529 INFO    MainThread:2625211 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-04-19 14:15:28,531 INFO    MainThread:2625211 [backend.py:ensure_launched():217] starting backend process...
+2025-04-19 14:15:28,585 INFO    MainThread:2625211 [backend.py:ensure_launched():222] started backend process with pid: 2626952
+2025-04-19 14:15:28,586 INFO    MainThread:2625211 [wandb_init.py:init():558] backend started and connected
+2025-04-19 14:15:28,599 INFO    MainThread:2625211 [wandb_run.py:_label_probe_notebook():1084] probe notebook
+2025-04-19 14:15:28,599 INFO    MainThread:2625211 [wandb_run.py:_label_probe_notebook():1094] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-04-19 14:15:28,599 INFO    MainThread:2625211 [wandb_init.py:init():634] updated telemetry
+2025-04-19 14:15:28,737 INFO    MainThread:2625211 [wandb_init.py:init():666] communicating run to backend with 30 second timeout
+2025-04-19 14:15:30,583 INFO    MainThread:2625211 [wandb_run.py:_on_init():1919] communicating current version
+2025-04-19 14:15:30,665 INFO    MainThread:2625211 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.19.9 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-19 14:15:30,665 INFO    MainThread:2625211 [wandb_init.py:init():700] starting run threads in backend
+2025-04-19 14:15:34,127 INFO    MainThread:2625211 [wandb_run.py:_console_start():1893] atexit reg
+2025-04-19 14:15:34,128 INFO    MainThread:2625211 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2025-04-19 14:15:34,128 INFO    MainThread:2625211 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2025-04-19 14:15:34,137 INFO    MainThread:2625211 [wandb_run.py:_redirect():1827] Redirects installed.
+2025-04-19 14:15:34,137 INFO    MainThread:2625211 [wandb_init.py:init():732] run started, returning control to user process
+2025-04-19 14:17:56,849 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Configure stats pid to 2625211
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /home/md5121/.config/wandb/settings
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /scratch/md5121/okhatisathi/tacotron2/wandb/settings
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_init.py:_log_setup():461] Logging user logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141756-8oape0qw/logs/debug.log
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_init.py:_log_setup():462] Logging internal logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141756-8oape0qw/logs/debug-internal.log
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x1554691a88d0>
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():495] calling init triggers
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {'epochs': 5, 'iters_per_checkpoint': 100, 'seed': 1234, 'dynamic_loss_scaling': True, 'fp16_run': False, 'distributed_run': False, 'dist_backend': 'nccl', 'dist_url': 'tcp://localhost:54321', 'cudnn_enabled': True, 'cudnn_benchmark': False, 'ignore_layers': ['embedding.weight'], 'load_mel_from_disk': False, 'training_files': './filelists/train_list.txt', 'validation_files': './filelists/val_list.txt', 'text_cleaners': ['transliteration_cleaners'], 'max_wav_value': 32768.0, 'sampling_rate': 22050, 'filter_length': 1024, 'hop_length': 256, 'win_length': 1024, 'n_mel_channels': 80, 'mel_fmin': 0.0, 'mel_fmax': 8000.0, 'n_symbols': 148, 'symbols_embedding_dim': 512, 'encoder_kernel_size': 5, 'encoder_n_convolutions': 3, 'encoder_embedding_dim': 512, 'n_frames_per_step': 1, 'decoder_rnn_dim': 1024, 'prenet_dim': 256, 'max_decoder_steps': 10000, 'gate_threshold': 0.5, 'p_attention_dropout': 0.1, 'p_decoder_dropout': 0.1, 'attention_rnn_dim': 1024, 'attention_dim': 128, 'attention_location_n_filters': 32, 'attention_location_kernel_size': 31, 'postnet_embedding_dim': 512, 'postnet_kernel_size': 5, 'postnet_n_convolutions': 5, 'use_saved_learning_rate': False, 'learning_rate': 0.001, 'weight_decay': 1e-06, 'grad_clip_thresh': 1.0, 'batch_size': 3, 'mask_padding': True}
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():515] re-initializing run, found existing run on stack: eeu7taho
+2025-04-19 14:17:56,879 ERROR   MainThread:2625211 [wandb_init.py:init():1070] error
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 527, in init
+    self._wl._global_run_stack[-1].finish()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 256, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1673, in finish
+    return self._finish(exit_code, quiet)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1679, in _finish
+    tel.feature.finish = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2025-04-19 14:18:03,475 ERROR   MainThread:2625211 [wandb_init.py:init():1070] error
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 186, in setup
+    tel.feature.set_init_tags = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2025-04-19 14:18:13,069 INFO    MainThread:2625211 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2025-04-19 14:18:13,070 INFO    MainThread:2625211 [wandb_run.py:_restore():1834] restore

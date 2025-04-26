@@ -1,0 +1,31 @@
+{
+    "os": "Linux-4.18.0-513.5.1.el8_9.x86_64-x86_64-with-centos-8.9-Green_Obsidian",
+    "python": "3.6.13",
+    "heartbeatAt": "2025-04-24T02:53:06.287184",
+    "startedAt": "2025-04-24T02:53:04.555214",
+    "docker": null,
+    "gpu": "NVIDIA A100-PCIE-40GB",
+    "gpu_count": 1,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "--batch_size=32",
+        "--early_stopping_patience=8",
+        "--learning_rate=0.0007827160080012804",
+        "--p_attention_dropout=0.15",
+        "--p_decoder_dropout=0.15",
+        "--weight_decay=7.559457415206472e-06"
+    ],
+    "state": "running",
+    "program": "goat_finetune.py",
+    "codePath": "goat_finetune.py",
+    "git": {
+        "remote": "https://github.com/NVIDIA/tacotron2.git",
+        "commit": "185cd24e046cc1304b4f8e564734d2498c6e2e6f"
+    },
+    "email": null,
+    "root": "/scratch/md5121/okhatisathi/tacotron2",
+    "host": "cn001",
+    "username": "md5121",
+    "executable": "/home/md5121/.conda/envs/t2env/bin/python"
+}

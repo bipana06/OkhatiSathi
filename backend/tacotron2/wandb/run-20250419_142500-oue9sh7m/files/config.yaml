@@ -1,0 +1,178 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.6.13
+    start_time: 1745058300
+    t:
+      1:
+      - 1
+      - 3
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 3
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      - 16
+      4: 3.6.13
+      5: 0.12.21
+      8:
+      - 1
+      - 5
+attention_dim:
+  desc: null
+  value: 128
+attention_location_kernel_size:
+  desc: null
+  value: 31
+attention_location_n_filters:
+  desc: null
+  value: 32
+attention_rnn_dim:
+  desc: null
+  value: 1024
+batch_size:
+  desc: null
+  value: 3
+cudnn_benchmark:
+  desc: null
+  value: false
+cudnn_enabled:
+  desc: null
+  value: true
+decoder_rnn_dim:
+  desc: null
+  value: 1024
+dist_backend:
+  desc: null
+  value: nccl
+dist_url:
+  desc: null
+  value: tcp://localhost:54321
+distributed_run:
+  desc: null
+  value: false
+dynamic_loss_scaling:
+  desc: null
+  value: true
+encoder_embedding_dim:
+  desc: null
+  value: 512
+encoder_kernel_size:
+  desc: null
+  value: 5
+encoder_n_convolutions:
+  desc: null
+  value: 3
+epochs:
+  desc: null
+  value: 5
+filter_length:
+  desc: null
+  value: 1024
+fp16_run:
+  desc: null
+  value: false
+gate_threshold:
+  desc: null
+  value: 0.5
+grad_clip_thresh:
+  desc: null
+  value: 1.0
+hop_length:
+  desc: null
+  value: 256
+ignore_layers:
+  desc: null
+  value:
+  - embedding.weight
+iters_per_checkpoint:
+  desc: null
+  value: 100
+learning_rate:
+  desc: null
+  value: 0.001
+load_mel_from_disk:
+  desc: null
+  value: false
+mask_padding:
+  desc: null
+  value: true
+max_decoder_steps:
+  desc: null
+  value: 10000
+max_wav_value:
+  desc: null
+  value: 32768.0
+mel_fmax:
+  desc: null
+  value: 8000.0
+mel_fmin:
+  desc: null
+  value: 0.0
+n_frames_per_step:
+  desc: null
+  value: 1
+n_mel_channels:
+  desc: null
+  value: 80
+n_symbols:
+  desc: null
+  value: 148
+p_attention_dropout:
+  desc: null
+  value: 0.1
+p_decoder_dropout:
+  desc: null
+  value: 0.1
+postnet_embedding_dim:
+  desc: null
+  value: 512
+postnet_kernel_size:
+  desc: null
+  value: 5
+postnet_n_convolutions:
+  desc: null
+  value: 5
+prenet_dim:
+  desc: null
+  value: 256
+sampling_rate:
+  desc: null
+  value: 22050
+seed:
+  desc: null
+  value: 1234
+symbols_embedding_dim:
+  desc: null
+  value: 512
+text_cleaners:
+  desc: null
+  value:
+  - transliteration_cleaners
+training_files:
+  desc: null
+  value: ./filelists/train_list.txt
+use_saved_learning_rate:
+  desc: null
+  value: false
+validation_files:
+  desc: null
+  value: ./filelists/val_list.txt
+weight_decay:
+  desc: null
+  value: 1.0e-06
+win_length:
+  desc: null
+  value: 1024
