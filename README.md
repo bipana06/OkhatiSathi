@@ -43,8 +43,8 @@ cd OkhatiSathi
 Navigate to the backend folder and create a virtual environment. (Requires Python 3.8+)
 ```bash
 cd backend
-python -m venv campusenv
-source campusenv/bin/activate    # On Windows: campusenv\Scripts\activate
+python -m venv {yourenv}
+source {yourenv}/bin/activate    # On Windows: {yourenv}\Scripts\activate
 ```
 
 #### b. Install Python Dependencies
@@ -63,9 +63,9 @@ GROQ_API_KEY=your_groq_api_key_here
 > Ensure that your Tacotron2 directory contains the `text` subdirectory (with an `__init__.py` and `text_processing.py`) so that the model loads the correct symbols. This is required to match the checkpoint dimensions.
 
 #### d. Start the Backend Server
-Depending on your application entry point (for example, if it’s named `server.py` or similar), start the backend server:
+Depending on your application entry point (for example, if it’s named `main.py` or similar), start the backend server:
 ```bash
-python server.py
+uvicorn main:app --reload
 ```
 Check the console for messages such as “Tacotron2 model initialized.” and verify that no checkpoint loading errors occur.
 
@@ -114,10 +114,10 @@ Follow the instructions to run the app on a device, emulator, or via the web.
 ## Data Sources
 
 - **Medicine Data:**  
-  Collected and organized from public PDFs provided by the National Health Infirmary in Nepal.
+  Collected and organized from public PDFs provided by the National Health Formulary in Nepal.
 
 - **Nepali TTS Model:**  
-  Trained using publicly available Nepali audio and text datasets.
+  Trained using publicly available Nepali audio and text datasets by finetuning Tacotron2 Model
 
 ## Contributors
 
@@ -130,6 +130,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- National Health Infirmary, Nepal for providing medicine data.
+- National Health Formulary, Nepal for providing medicine data.
 - Open-source projects for OCR, NER, and TTS tools.
 - Public Nepali datasets for training purposes.
