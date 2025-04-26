@@ -1,0 +1,246 @@
+2025-04-19 16:04:41,414 INFO    MainThread:2634145 [internal.py:wandb_internal():93] W&B internal server running at pid: 2634145, started at: 2025-04-19 16:04:41.413429
+2025-04-19 16:04:41,417 INFO    WriterThread:2634145 [datastore.py:open_for_write():75] open: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/run-p9kwue3p.wandb
+2025-04-19 16:04:41,419 DEBUG   SenderThread:2634145 [sender.py:send():236] send: header
+2025-04-19 16:04:41,419 DEBUG   SenderThread:2634145 [sender.py:send():236] send: run
+2025-04-19 16:04:41,839 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: check_version
+2025-04-19 16:04:41,841 INFO    SenderThread:2634145 [dir_watcher.py:__init__():216] watching files in: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files
+2025-04-19 16:04:41,842 INFO    SenderThread:2634145 [sender.py:_start_run_threads():818] run started: p9kwue3p with start time 1745064280
+2025-04-19 16:04:41,842 DEBUG   SenderThread:2634145 [sender.py:send():236] send: summary
+2025-04-19 16:04:41,843 INFO    SenderThread:2634145 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-04-19 16:04:41,844 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: check_version
+2025-04-19 16:04:41,916 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: run_start
+2025-04-19 16:04:41,935 DEBUG   HandlerThread:2634145 [meta.py:__init__():35] meta init
+2025-04-19 16:04:41,935 DEBUG   HandlerThread:2634145 [meta.py:__init__():49] meta init done
+2025-04-19 16:04:41,935 DEBUG   HandlerThread:2634145 [meta.py:probe():209] probe
+2025-04-19 16:04:41,942 DEBUG   HandlerThread:2634145 [meta.py:_setup_git():199] setup git
+2025-04-19 16:04:41,981 DEBUG   HandlerThread:2634145 [meta.py:_setup_git():206] setup git done
+2025-04-19 16:04:41,982 DEBUG   HandlerThread:2634145 [meta.py:_save_pip():53] save pip
+2025-04-19 16:04:41,983 DEBUG   HandlerThread:2634145 [meta.py:_save_pip():67] save pip done
+2025-04-19 16:04:41,983 DEBUG   HandlerThread:2634145 [meta.py:_save_conda():74] save conda
+2025-04-19 16:04:42,845 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_created():269] file/dir created: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/conda-environment.yaml
+2025-04-19 16:04:42,845 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_created():269] file/dir created: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-summary.json
+2025-04-19 16:04:42,845 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_created():269] file/dir created: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/requirements.txt
+2025-04-19 16:04:44,962 DEBUG   HandlerThread:2634145 [meta.py:_save_conda():84] save conda done
+2025-04-19 16:04:44,962 DEBUG   HandlerThread:2634145 [meta.py:probe():247] probe done
+2025-04-19 16:04:45,000 DEBUG   SenderThread:2634145 [sender.py:send():236] send: files
+2025-04-19 16:04:45,000 INFO    SenderThread:2634145 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2025-04-19 16:04:45,013 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:04:45,014 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:04:45,392 DEBUG   SenderThread:2634145 [sender.py:send():236] send: telemetry
+2025-04-19 16:04:45,850 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/conda-environment.yaml
+2025-04-19 16:04:45,850 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_created():269] file/dir created: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-metadata.json
+2025-04-19 16:04:45,850 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_created():269] file/dir created: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:04:45,852 INFO    Thread-11 :2634145 [upload_job.py:push():138] Uploaded file /tmpdata/tmpc_9x7hpswandb/yowqx38z-wandb-metadata.json
+2025-04-19 16:04:47,852 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:04:51,855 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:04:53,857 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:05:00,394 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:05:00,394 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:05:10,387 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:05:12,871 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/config.yaml
+2025-04-19 16:05:15,783 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:05:15,783 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:05:31,111 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:05:31,112 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:05:40,805 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:05:46,486 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:05:46,487 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:06:01,779 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:06:01,779 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:06:11,226 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:06:17,073 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:06:17,073 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:06:32,436 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:06:32,436 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:06:41,648 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:06:47,777 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:06:47,777 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:07:03,100 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:07:03,100 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:07:12,072 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:07:18,420 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:07:18,420 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:07:33,699 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:07:33,700 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:07:42,485 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:07:49,058 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:07:49,058 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:08:04,374 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:08:04,374 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:08:12,905 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:08:19,740 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:08:19,740 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:08:35,048 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:08:35,048 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:08:43,318 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:08:50,397 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:08:50,398 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:09:05,722 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:09:05,723 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:09:13,734 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:09:21,037 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:09:21,037 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:09:36,389 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:09:36,389 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:09:44,146 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:09:51,715 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:09:51,716 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:10:07,062 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:10:07,062 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:10:14,561 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:10:22,445 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:10:22,445 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:10:37,783 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:10:37,783 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:10:44,998 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:10:53,138 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:10:53,139 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:11:08,431 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:11:08,432 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:11:15,438 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:11:23,715 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:11:23,715 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:11:39,089 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:11:39,090 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:11:45,870 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:11:54,440 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:11:54,440 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:12:09,784 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:12:09,784 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:12:16,304 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:12:25,152 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:12:25,152 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:12:40,467 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:12:40,467 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:12:46,729 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:12:55,766 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:12:55,766 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:13:11,098 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: stop_status
+2025-04-19 16:13:11,098 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: stop_status
+2025-04-19 16:13:12,809 DEBUG   SenderThread:2634145 [sender.py:send():236] send: telemetry
+2025-04-19 16:13:12,814 DEBUG   SenderThread:2634145 [sender.py:send():236] send: telemetry
+2025-04-19 16:13:13,189 DEBUG   SenderThread:2634145 [sender.py:send():236] send: exit
+2025-04-19 16:13:13,189 INFO    SenderThread:2634145 [sender.py:send_exit():372] handling exit code: 0
+2025-04-19 16:13:13,189 INFO    SenderThread:2634145 [sender.py:send_exit():374] handling runtime: 511
+2025-04-19 16:13:13,191 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:13,192 INFO    SenderThread:2634145 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-04-19 16:13:13,192 INFO    SenderThread:2634145 [sender.py:send_exit():380] send defer
+2025-04-19 16:13:13,192 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:13,192 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,193 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 0
+2025-04-19 16:13:13,193 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,193 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 0
+2025-04-19 16:13:13,193 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 1
+2025-04-19 16:13:13,193 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,193 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 1
+2025-04-19 16:13:13,238 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-summary.json
+2025-04-19 16:13:13,238 INFO    Thread-7  :2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:13:13,297 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:13,297 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,297 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 1
+2025-04-19 16:13:13,297 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 2
+2025-04-19 16:13:13,297 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:13,298 DEBUG   SenderThread:2634145 [sender.py:send():236] send: stats
+2025-04-19 16:13:13,298 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,298 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 2
+2025-04-19 16:13:13,298 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,298 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 2
+2025-04-19 16:13:13,298 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 3
+2025-04-19 16:13:13,299 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,299 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 3
+2025-04-19 16:13:13,299 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,299 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 3
+2025-04-19 16:13:13,299 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 4
+2025-04-19 16:13:13,299 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,299 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 4
+2025-04-19 16:13:13,300 DEBUG   SenderThread:2634145 [sender.py:send():236] send: summary
+2025-04-19 16:13:13,301 INFO    SenderThread:2634145 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2025-04-19 16:13:13,301 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,301 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 4
+2025-04-19 16:13:13,301 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 5
+2025-04-19 16:13:13,301 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,301 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 5
+2025-04-19 16:13:13,301 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,301 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 5
+2025-04-19 16:13:13,399 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:13,699 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 6
+2025-04-19 16:13:13,699 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:13,700 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:13,700 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 6
+2025-04-19 16:13:13,700 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:13,700 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 6
+2025-04-19 16:13:13,700 INFO    SenderThread:2634145 [dir_watcher.py:finish():353] shutting down directory watcher
+2025-04-19 16:13:13,801 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,240 INFO    SenderThread:2634145 [dir_watcher.py:_on_file_modified():286] file/dir modified: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/config.yaml
+2025-04-19 16:13:14,240 INFO    SenderThread:2634145 [dir_watcher.py:finish():383] scan: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files
+2025-04-19 16:13:14,241 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-summary.json wandb-summary.json
+2025-04-19 16:13:14,241 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/config.yaml config.yaml
+2025-04-19 16:13:14,245 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-metadata.json wandb-metadata.json
+2025-04-19 16:13:14,245 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/conda-environment.yaml conda-environment.yaml
+2025-04-19 16:13:14,246 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log output.log
+2025-04-19 16:13:14,253 INFO    SenderThread:2634145 [dir_watcher.py:finish():397] scan save: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/requirements.txt requirements.txt
+2025-04-19 16:13:14,253 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 7
+2025-04-19 16:13:14,254 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,259 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:14,262 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 7
+2025-04-19 16:13:14,263 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:14,270 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 7
+2025-04-19 16:13:14,270 INFO    SenderThread:2634145 [file_pusher.py:finish():171] shutting down file pusher
+2025-04-19 16:13:14,355 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,355 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,456 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,456 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,557 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,557 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,658 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,658 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,759 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,759 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,860 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,860 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:14,961 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:14,962 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:15,063 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:15,063 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:15,069 INFO    Thread-12 :2634145 [upload_job.py:push():138] Uploaded file /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/wandb-summary.json
+2025-04-19 16:13:15,083 INFO    Thread-13 :2634145 [upload_job.py:push():138] Uploaded file /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/config.yaml
+2025-04-19 16:13:15,085 INFO    Thread-16 :2634145 [upload_job.py:push():138] Uploaded file /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/requirements.txt
+2025-04-19 16:13:15,128 INFO    Thread-14 :2634145 [upload_job.py:push():138] Uploaded file /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/conda-environment.yaml
+2025-04-19 16:13:15,164 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:15,164 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:15,176 INFO    Thread-15 :2634145 [upload_job.py:push():138] Uploaded file /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/files/output.log
+2025-04-19 16:13:15,266 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:15,266 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:15,367 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:15,367 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:15,376 INFO    Thread-6  :2634145 [sender.py:transition_state():393] send defer: 8
+2025-04-19 16:13:15,377 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:15,377 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 8
+2025-04-19 16:13:15,377 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:15,377 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 8
+2025-04-19 16:13:15,469 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:16,457 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 9
+2025-04-19 16:13:16,457 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:16,457 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:16,458 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 9
+2025-04-19 16:13:16,458 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:16,458 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 9
+2025-04-19 16:13:16,458 INFO    SenderThread:2634145 [sender.py:transition_state():393] send defer: 10
+2025-04-19 16:13:16,459 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: defer
+2025-04-19 16:13:16,459 DEBUG   SenderThread:2634145 [sender.py:send():236] send: final
+2025-04-19 16:13:16,459 INFO    HandlerThread:2634145 [handler.py:handle_request_defer():163] handle defer: 10
+2025-04-19 16:13:16,459 DEBUG   SenderThread:2634145 [sender.py:send():236] send: footer
+2025-04-19 16:13:16,459 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: defer
+2025-04-19 16:13:16,459 INFO    SenderThread:2634145 [sender.py:send_request_defer():389] handle sender defer: 10
+2025-04-19 16:13:16,559 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: poll_exit
+2025-04-19 16:13:16,559 DEBUG   SenderThread:2634145 [sender.py:send_request():250] send_request: poll_exit
+2025-04-19 16:13:16,559 INFO    SenderThread:2634145 [file_pusher.py:join():176] waiting for file pusher
+2025-04-19 16:13:17,220 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: sampled_history
+2025-04-19 16:13:17,221 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: get_summary
+2025-04-19 16:13:17,222 DEBUG   HandlerThread:2634145 [handler.py:handle_request():140] handle_request: shutdown
+2025-04-19 16:13:17,222 INFO    HandlerThread:2634145 [handler.py:finish():806] shutting down handler
+2025-04-19 16:13:17,459 INFO    WriterThread:2634145 [datastore.py:close():279] close: /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_160434-p9kwue3p/run-p9kwue3p.wandb
+2025-04-19 16:13:18,119 INFO    SenderThread:2634145 [sender.py:finish():1114] shutting down sender
+2025-04-19 16:13:18,120 INFO    SenderThread:2634145 [file_pusher.py:finish():171] shutting down file pusher
+2025-04-19 16:13:18,120 INFO    SenderThread:2634145 [file_pusher.py:join():176] waiting for file pusher
+2025-04-19 16:13:18,122 INFO    MainThread:2634145 [internal.py:handle_exit():80] Internal process exited

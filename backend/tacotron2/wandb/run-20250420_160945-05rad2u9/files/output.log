@@ -1,0 +1,385 @@
+--- Starting W&B Run: clear-sweep-18 (ID: 05rad2u9) ---
+Sweep Configuration for this run:
+  Overriding hparams.batch_size: 32 -> 16
+  Overriding hparams.early_stopping_patience: 10 -> 15
+  Overriding hparams.learning_rate: 0.0001 -> 0.0004614076491889534
+  Overriding hparams.p_attention_dropout: 0.1 -> 0.1
+  Overriding hparams.p_decoder_dropout: 0.1 -> 0.05
+  Overriding hparams.weight_decay: 1e-06 -> 1.2864652564139027e-06
+Run-specific Output Directory: ./outdir_sweep/05rad2u9
+--- Final HParams for Training Run ---
+  epochs: 200
+  seed: 1234
+  distributed_run: False
+  n_gpus: 1
+  rank: 0
+  group_name: group_name
+  cudnn_enabled: True
+  cudnn_benchmark: False
+  fp16_run: False
+  load_mel_from_disk: False
+  training_files: ./filelists/train_list.txt
+  validation_files: ./filelists/val_list.txt
+  text_cleaners: ['transliteration_cleaners']
+  num_workers: 4
+  pin_memory: True
+  max_wav_value: 32768.0
+  sampling_rate: 22050
+  filter_length: 1024
+  hop_length: 256
+  win_length: 1024
+  n_mel_channels: 80
+  mel_fmin: 0.0
+  mel_fmax: 8000.0
+  n_symbols: 148
+  symbols_embedding_dim: 512
+  encoder_kernel_size: 5
+  encoder_n_convolutions: 3
+  encoder_embedding_dim: 512
+  n_frames_per_step: 1
+  decoder_rnn_dim: 1024
+  prenet_dim: 256
+  max_decoder_steps: 1000
+  gate_threshold: 0.5
+  p_attention_dropout: 0.1
+  p_decoder_dropout: 0.05
+  attention_rnn_dim: 1024
+  attention_dim: 128
+  attention_location_n_filters: 32
+  attention_location_kernel_size: 31
+  postnet_embedding_dim: 512
+  postnet_kernel_size: 5
+  postnet_n_convolutions: 5
+  use_saved_learning_rate: False
+  learning_rate: 0.0004614076491889534
+  weight_decay: 1.2864652564139027e-06
+  grad_clip_thresh: 1.0
+  batch_size: 16
+  mask_padding: True
+  log_interval: 100
+  iters_per_checkpoint: 1000
+  early_stopping_patience: 15
+  min_val_loss_delta: 0.0001
+  ignore_layers: ['embedding.weight']
+--------------------------------------
+Calling train function...
+TensorBoard Log directory: ./outdir_sweep/05rad2u9/logs
+Warm starting model from checkpoint 'tacotron2_statedict.pt'
+  Applying warm start: Ignored 1 keys based on ignore_layers. Loading 83 keys.
+Warm start complete. Optimizer and iteration count reset.
+Starting training for 200 epochs...
+--- Epoch: 0 ---
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Train Iter: 0 Epoch: 0 [0/2367 (0%)]	Loss: 1.532587	Grad Norm: 11.824928	LR: 4.6E-04	Time: 4.72s/it
+Train Iter: 100 Epoch: 0 [1600/2367 (68%)]	Loss: 0.539476	Grad Norm: 4.138316	LR: 4.6E-04	Time: 3.39s/it
+--- Epoch 0 Summary ---
+Average Training Loss: 0.657360
+Average Grad Norm: 2.482424
+Epoch Duration: 481.78s
+--- Epoch: 1 ---
+Train Iter: 200 Epoch: 1 [848/2367 (36%)]	Loss: 0.550058	Grad Norm: 1.313007	LR: 4.6E-04	Time: 3.05s/it
+--- Epoch 1 Summary ---
+Average Training Loss: 0.516989
+Average Grad Norm: 1.310231
+Epoch Duration: 482.05s
+--- Epoch: 2 ---
+Train Iter: 300 Epoch: 2 [96/2367 (4%)]	Loss: 0.448235	Grad Norm: 0.602738	LR: 4.6E-04	Time: 3.42s/it
+Train Iter: 400 Epoch: 2 [1696/2367 (72%)]	Loss: 0.423807	Grad Norm: 0.708380	LR: 4.6E-04	Time: 3.38s/it
+--- Epoch 2 Summary ---
+Average Training Loss: 0.480007
+Average Grad Norm: 1.120036
+Epoch Duration: 483.93s
+--- Epoch: 3 ---
+Train Iter: 500 Epoch: 3 [944/2367 (40%)]	Loss: 0.398520	Grad Norm: 0.384337	LR: 4.6E-04	Time: 4.10s/it
+--- Epoch 3 Summary ---
+Average Training Loss: 0.464466
+Average Grad Norm: 1.317090
+Epoch Duration: 479.27s
+--- Epoch: 4 ---
+Train Iter: 600 Epoch: 4 [192/2367 (8%)]	Loss: 0.395666	Grad Norm: 0.390941	LR: 4.6E-04	Time: 3.28s/it
+Train Iter: 700 Epoch: 4 [1792/2367 (76%)]	Loss: 0.411370	Grad Norm: 1.320300	LR: 4.6E-04	Time: 3.74s/it
+--- Epoch 4 Summary ---
+Average Training Loss: 0.440535
+Average Grad Norm: 1.235443
+Epoch Duration: 481.82s
+--- Epoch: 5 ---
+Train Iter: 800 Epoch: 5 [1040/2367 (44%)]	Loss: 0.455417	Grad Norm: 0.622276	LR: 4.6E-04	Time: 3.20s/it
+--- Epoch 5 Summary ---
+Average Training Loss: 0.422650
+Average Grad Norm: 0.882192
+Epoch Duration: 483.84s
+--- Epoch: 6 ---
+Train Iter: 900 Epoch: 6 [288/2367 (12%)]	Loss: 0.473614	Grad Norm: 1.134514	LR: 4.6E-04	Time: 3.02s/it
+Train Iter: 1000 Epoch: 6 [1888/2367 (80%)]	Loss: 0.389686	Grad Norm: 0.823631	LR: 4.6E-04	Time: 2.86s/it
+--- Epoch 6 Summary ---
+Average Training Loss: 0.414840
+Average Grad Norm: 0.855162
+Epoch Duration: 478.12s
+--- Epoch: 7 ---
+Train Iter: 1100 Epoch: 7 [1136/2367 (48%)]	Loss: 0.488208	Grad Norm: 1.461911	LR: 4.6E-04	Time: 2.34s/it
+--- Epoch 7 Summary ---
+Average Training Loss: 0.399074
+Average Grad Norm: 0.902120
+Epoch Duration: 482.68s
+--- Epoch: 8 ---
+Train Iter: 1200 Epoch: 8 [384/2367 (16%)]	Loss: 0.368965	Grad Norm: 0.385741	LR: 4.6E-04	Time: 4.04s/it
+Train Iter: 1300 Epoch: 8 [1984/2367 (84%)]	Loss: 0.379595	Grad Norm: 0.550100	LR: 4.6E-04	Time: 2.91s/it
+--- Epoch 8 Summary ---
+Average Training Loss: 0.396351
+Average Grad Norm: 0.987092
+Epoch Duration: 477.09s
+--- Epoch: 9 ---
+Train Iter: 1400 Epoch: 9 [1232/2367 (52%)]	Loss: 0.422913	Grad Norm: 1.715524	LR: 4.6E-04	Time: 2.89s/it
+--- Epoch 9 Summary ---
+Average Training Loss: 0.384224
+Average Grad Norm: 0.735389
+Epoch Duration: 478.36s
+--- Epoch: 10 ---
+Train Iter: 1500 Epoch: 10 [480/2367 (20%)]	Loss: 0.422853	Grad Norm: 0.456875	LR: 4.6E-04	Time: 2.78s/it
+Train Iter: 1600 Epoch: 10 [2080/2367 (88%)]	Loss: 0.373286	Grad Norm: 0.469873	LR: 4.6E-04	Time: 3.21s/it
+--- Epoch 10 Summary ---
+Average Training Loss: 0.379656
+Average Grad Norm: 0.830157
+Epoch Duration: 477.91s
+--- Epoch: 11 ---
+Train Iter: 1700 Epoch: 11 [1328/2367 (56%)]	Loss: 0.385857	Grad Norm: 0.506199	LR: 4.6E-04	Time: 3.57s/it
+--- Epoch 11 Summary ---
+Average Training Loss: 0.372051
+Average Grad Norm: 0.926089
+Epoch Duration: 478.96s
+--- Epoch: 12 ---
+Train Iter: 1800 Epoch: 12 [576/2367 (24%)]	Loss: 0.327627	Grad Norm: 0.954642	LR: 4.6E-04	Time: 3.24s/it
+Train Iter: 1900 Epoch: 12 [2176/2367 (93%)]	Loss: 0.329605	Grad Norm: 0.416358	LR: 4.6E-04	Time: 3.90s/it
+--- Epoch 12 Summary ---
+Average Training Loss: 0.359402
+Average Grad Norm: 0.635697
+Epoch Duration: 484.95s
+--- Epoch: 13 ---
+Train Iter: 2000 Epoch: 13 [1424/2367 (61%)]	Loss: 0.354507	Grad Norm: 0.743138	LR: 4.6E-04	Time: 2.79s/it
+--- Epoch 13 Summary ---
+Average Training Loss: 0.362482
+Average Grad Norm: 0.724757
+Epoch Duration: 472.81s
+--- Epoch: 14 ---
+Train Iter: 2100 Epoch: 14 [672/2367 (29%)]	Loss: 0.451741	Grad Norm: 1.082185	LR: 4.6E-04	Time: 2.33s/it
+Train Iter: 2200 Epoch: 14 [2272/2367 (97%)]	Loss: 0.422931	Grad Norm: 1.289613	LR: 4.6E-04	Time: 3.54s/it
+--- Epoch 14 Summary ---
+Average Training Loss: 0.357922
+Average Grad Norm: 0.727811
+Epoch Duration: 475.72s
+--- Epoch: 15 ---
+Train Iter: 2300 Epoch: 15 [1520/2367 (65%)]	Loss: 0.290247	Grad Norm: 1.133613	LR: 4.6E-04	Time: 3.61s/it
+--- Epoch 15 Summary ---
+Average Training Loss: 0.352187
+Average Grad Norm: 0.802910
+Epoch Duration: 475.43s
+--- Epoch: 16 ---
+Train Iter: 2400 Epoch: 16 [768/2367 (33%)]	Loss: 0.279762	Grad Norm: 0.280502	LR: 4.6E-04	Time: 3.92s/it
+--- Epoch 16 Summary ---
+Average Training Loss: 0.345490
+Average Grad Norm: 0.654161
+Epoch Duration: 485.64s
+--- Epoch: 17 ---
+Train Iter: 2500 Epoch: 17 [16/2367 (1%)]	Loss: 0.420071	Grad Norm: 0.449710	LR: 4.6E-04	Time: 2.63s/it
+Train Iter: 2600 Epoch: 17 [1616/2367 (69%)]	Loss: 0.313271	Grad Norm: 1.212957	LR: 4.6E-04	Time: 2.66s/it
+--- Epoch 17 Summary ---
+Average Training Loss: 0.346406
+Average Grad Norm: 0.692588
+Epoch Duration: 476.13s
+--- Epoch: 18 ---
+Train Iter: 2700 Epoch: 18 [864/2367 (37%)]	Loss: 0.382901	Grad Norm: 1.314111	LR: 4.6E-04	Time: 3.01s/it
+--- Epoch 18 Summary ---
+Average Training Loss: 0.337790
+Average Grad Norm: 0.668739
+Epoch Duration: 477.89s
+--- Epoch: 19 ---
+Train Iter: 2800 Epoch: 19 [112/2367 (5%)]	Loss: 0.345830	Grad Norm: 0.394011	LR: 4.6E-04	Time: 3.24s/it
+Train Iter: 2900 Epoch: 19 [1712/2367 (73%)]	Loss: 0.347736	Grad Norm: 0.989656	LR: 4.6E-04	Time: 3.18s/it
+--- Epoch 19 Summary ---
+Average Training Loss: 0.340367
+Average Grad Norm: 0.671590
+Epoch Duration: 470.85s
+--- Epoch: 20 ---
+Train Iter: 3000 Epoch: 20 [960/2367 (41%)]	Loss: 0.424545	Grad Norm: 0.420543	LR: 4.6E-04	Time: 2.83s/it
+--- Epoch 20 Summary ---
+Average Training Loss: 0.327278
+Average Grad Norm: 0.561403
+Epoch Duration: 479.81s
+--- Epoch: 21 ---
+Train Iter: 3100 Epoch: 21 [208/2367 (9%)]	Loss: 0.266921	Grad Norm: 1.217413	LR: 4.6E-04	Time: 3.75s/it
+Train Iter: 3200 Epoch: 21 [1808/2367 (77%)]	Loss: 0.342096	Grad Norm: 0.549010	LR: 4.6E-04	Time: 2.58s/it
+--- Epoch 21 Summary ---
+Average Training Loss: 0.332073
+Average Grad Norm: 0.635251
+Epoch Duration: 472.15s
+--- Epoch: 22 ---
+Train Iter: 3300 Epoch: 22 [1056/2367 (45%)]	Loss: 0.334958	Grad Norm: 0.411576	LR: 4.6E-04	Time: 2.82s/it
+--- Epoch 22 Summary ---
+Average Training Loss: 0.324850
+Average Grad Norm: 0.586724
+Epoch Duration: 482.80s
+--- Epoch: 23 ---
+Train Iter: 3400 Epoch: 23 [304/2367 (13%)]	Loss: 0.352985	Grad Norm: 0.366928	LR: 4.6E-04	Time: 3.56s/it
+Train Iter: 3500 Epoch: 23 [1904/2367 (81%)]	Loss: 0.339606	Grad Norm: 0.525460	LR: 4.6E-04	Time: 3.63s/it
+--- Epoch 23 Summary ---
+Average Training Loss: 0.325135
+Average Grad Norm: 0.641723
+Epoch Duration: 479.60s
+--- Epoch: 24 ---
+Train Iter: 3600 Epoch: 24 [1152/2367 (49%)]	Loss: 0.366456	Grad Norm: 0.456463	LR: 4.6E-04	Time: 2.67s/it
+--- Epoch 24 Summary ---
+Average Training Loss: 0.324376
+Average Grad Norm: 0.635847
+Epoch Duration: 478.64s
+--- Epoch: 25 ---
+Train Iter: 3700 Epoch: 25 [400/2367 (17%)]	Loss: 0.352209	Grad Norm: 0.796135	LR: 4.6E-04	Time: 3.16s/it
+Train Iter: 3800 Epoch: 25 [2000/2367 (85%)]	Loss: 0.334314	Grad Norm: 0.463210	LR: 4.6E-04	Time: 3.15s/it
+--- Epoch 25 Summary ---
+Average Training Loss: 0.325194
+Average Grad Norm: 0.576032
+Epoch Duration: 480.31s
+--- Epoch: 26 ---
+Train Iter: 3900 Epoch: 26 [1248/2367 (53%)]	Loss: 0.308944	Grad Norm: 0.328692	LR: 4.6E-04	Time: 3.10s/it
+--- Epoch 26 Summary ---
+Average Training Loss: 0.318237
+Average Grad Norm: 0.613467
+Epoch Duration: 480.83s
+--- Epoch: 27 ---
+Train Iter: 4000 Epoch: 27 [496/2367 (21%)]	Loss: 0.253725	Grad Norm: 0.815582	LR: 4.6E-04	Time: 3.76s/it
+Train Iter: 4100 Epoch: 27 [2096/2367 (89%)]	Loss: 0.272051	Grad Norm: 0.365091	LR: 4.6E-04	Time: 3.10s/it
+--- Epoch 27 Summary ---
+Average Training Loss: 0.318129
+Average Grad Norm: 0.527703
+Epoch Duration: 480.16s
+--- Epoch: 28 ---
+Train Iter: 4200 Epoch: 28 [1344/2367 (57%)]	Loss: 0.308088	Grad Norm: 0.429373	LR: 4.6E-04	Time: 4.03s/it
+--- Epoch 28 Summary ---
+Average Training Loss: 0.309450
+Average Grad Norm: 0.451813
+Epoch Duration: 481.94s
+--- Epoch: 29 ---
+Train Iter: 4300 Epoch: 29 [592/2367 (25%)]	Loss: 0.341929	Grad Norm: 0.502646	LR: 4.6E-04	Time: 2.41s/it
+Train Iter: 4400 Epoch: 29 [2192/2367 (93%)]	Loss: 0.253743	Grad Norm: 0.293548	LR: 4.6E-04	Time: 3.66s/it
+--- Epoch 29 Summary ---
+Average Training Loss: 0.307365
+Average Grad Norm: 0.577083
+Epoch Duration: 485.34s
+--- Epoch: 30 ---
+Train Iter: 4500 Epoch: 30 [1440/2367 (61%)]	Loss: 0.253184	Grad Norm: 0.320157	LR: 4.6E-04	Time: 4.37s/it
+--- Epoch 30 Summary ---
+Average Training Loss: 0.305163
+Average Grad Norm: 0.506369
+Epoch Duration: 480.71s
+--- Epoch: 31 ---
+Train Iter: 4600 Epoch: 31 [688/2367 (29%)]	Loss: 0.281154	Grad Norm: 0.527285	LR: 4.6E-04	Time: 3.27s/it
+Train Iter: 4700 Epoch: 31 [2288/2367 (97%)]	Loss: 0.342055	Grad Norm: 0.546072	LR: 4.6E-04	Time: 2.92s/it
+--- Epoch 31 Summary ---
+Average Training Loss: 0.301299
+Average Grad Norm: 0.450805
+Epoch Duration: 486.08s
+--- Epoch: 32 ---
+Train Iter: 4800 Epoch: 32 [1536/2367 (65%)]	Loss: 0.315717	Grad Norm: 0.537966	LR: 4.6E-04	Time: 4.19s/it
+--- Epoch 32 Summary ---
+Average Training Loss: 0.300670
+Average Grad Norm: 0.569259
+Epoch Duration: 482.35s
+--- Epoch: 33 ---
+Train Iter: 4900 Epoch: 33 [784/2367 (33%)]	Loss: 0.297506	Grad Norm: 0.774630	LR: 4.6E-04	Time: 3.57s/it
+--- Epoch 33 Summary ---
+Average Training Loss: 0.298788
+Average Grad Norm: 0.545435
+Epoch Duration: 485.91s
+--- Epoch: 34 ---
+Train Iter: 5000 Epoch: 34 [32/2367 (1%)]	Loss: 0.387295	Grad Norm: 0.534362	LR: 4.6E-04	Time: 2.78s/it
+Train Iter: 5100 Epoch: 34 [1632/2367 (69%)]	Loss: 0.274855	Grad Norm: 0.676456	LR: 4.6E-04	Time: 3.86s/it
+--- Epoch 34 Summary ---
+Average Training Loss: 0.294646
+Average Grad Norm: 0.438661
+Epoch Duration: 488.69s
+--- Epoch: 35 ---
+Train Iter: 5200 Epoch: 35 [880/2367 (37%)]	Loss: 0.287996	Grad Norm: 0.411188	LR: 4.6E-04	Time: 3.26s/it
+--- Epoch 35 Summary ---
+Average Training Loss: 0.295407
+Average Grad Norm: 0.470107
+Epoch Duration: 480.74s
+--- Epoch: 36 ---
+Train Iter: 5300 Epoch: 36 [128/2367 (5%)]	Loss: 0.323403	Grad Norm: 0.702892	LR: 4.6E-04	Time: 2.85s/it
+Train Iter: 5400 Epoch: 36 [1728/2367 (73%)]	Loss: 0.314631	Grad Norm: 0.409687	LR: 4.6E-04	Time: 2.61s/it
+--- Epoch 36 Summary ---
+Average Training Loss: 0.289672
+Average Grad Norm: 0.577768
+Epoch Duration: 489.01s
+--- Epoch: 37 ---
+Train Iter: 5500 Epoch: 37 [976/2367 (41%)]	Loss: 0.321467	Grad Norm: 1.146636	LR: 4.6E-04	Time: 2.92s/it
+--- Epoch 37 Summary ---
+Average Training Loss: 0.293652
+Average Grad Norm: 0.492292
+Epoch Duration: 477.50s
+--- Epoch: 38 ---
+Train Iter: 5600 Epoch: 38 [224/2367 (10%)]	Loss: 0.306887	Grad Norm: 0.371017	LR: 4.6E-04	Time: 3.17s/it
+Train Iter: 5700 Epoch: 38 [1824/2367 (78%)]	Loss: 0.258220	Grad Norm: 0.282714	LR: 4.6E-04	Time: 3.66s/it
+--- Epoch 38 Summary ---
+Average Training Loss: 0.288810
+Average Grad Norm: 0.461123
+Epoch Duration: 486.75s
+--- Epoch: 39 ---
+Train Iter: 5800 Epoch: 39 [1072/2367 (46%)]	Loss: 0.257105	Grad Norm: 0.821777	LR: 4.6E-04	Time: 4.52s/it
+--- Epoch 39 Summary ---
+Average Training Loss: 0.288081
+Average Grad Norm: 0.480719
+Epoch Duration: 484.04s
+--- Epoch: 40 ---
+Train Iter: 5900 Epoch: 40 [320/2367 (14%)]	Loss: 0.241797	Grad Norm: 0.255888	LR: 4.6E-04	Time: 3.40s/it
+Train Iter: 6000 Epoch: 40 [1920/2367 (82%)]	Loss: 0.242303	Grad Norm: 0.283758	LR: 4.6E-04	Time: 3.51s/it
+--- Epoch 40 Summary ---
+Average Training Loss: 0.284156
+Average Grad Norm: 0.481609
+Epoch Duration: 479.79s
+--- Epoch: 41 ---
+Train Iter: 6100 Epoch: 41 [1168/2367 (50%)]	Loss: 0.318650	Grad Norm: 0.330880	LR: 4.6E-04	Time: 3.10s/it
+--- Epoch 41 Summary ---
+Average Training Loss: 0.286545
+Average Grad Norm: 0.482802
+Epoch Duration: 478.03s
+--- Epoch: 42 ---
+Train Iter: 6200 Epoch: 42 [416/2367 (18%)]	Loss: 0.277058	Grad Norm: 0.391820	LR: 4.6E-04	Time: 3.14s/it
+Train Iter: 6300 Epoch: 42 [2016/2367 (86%)]	Loss: 0.306150	Grad Norm: 0.287586	LR: 4.6E-04	Time: 2.74s/it
+--- Epoch 42 Summary ---
+Average Training Loss: 0.282635
+Average Grad Norm: 0.469661
+Epoch Duration: 477.22s
+--- Epoch: 43 ---
+Train Iter: 6400 Epoch: 43 [1264/2367 (54%)]	Loss: 0.307062	Grad Norm: 0.510603	LR: 4.6E-04	Time: 2.80s/it
+--- Epoch 43 Summary ---
+Average Training Loss: 0.292225
+Average Grad Norm: 0.530729
+Epoch Duration: 463.60s
+--- Epoch: 44 ---
+Train Iter: 6500 Epoch: 44 [512/2367 (22%)]	Loss: 0.291481	Grad Norm: 0.435737	LR: 4.6E-04	Time: 3.12s/it
+Train Iter: 6600 Epoch: 44 [2112/2367 (90%)]	Loss: 0.296836	Grad Norm: 0.484336	LR: 4.6E-04	Time: 2.25s/it
+--- Epoch 44 Summary ---
+Average Training Loss: 0.279879
+Average Grad Norm: 0.489130
+Epoch Duration: 483.31s
+--- Epoch: 45 ---
+Train Iter: 6700 Epoch: 45 [1360/2367 (58%)]	Loss: 0.281867	Grad Norm: 0.264827	LR: 4.6E-04	Time: 2.78s/it
+--- Epoch 45 Summary ---
+Average Training Loss: 0.278980
+Average Grad Norm: 0.530378
+Epoch Duration: 483.55s
+--- Epoch: 46 ---
+Train Iter: 6800 Epoch: 46 [608/2367 (26%)]	Loss: 0.263050	Grad Norm: 0.612417	LR: 4.6E-04	Time: 2.88s/it
+Train Iter: 6900 Epoch: 46 [2208/2367 (94%)]	Loss: 0.367643	Grad Norm: 0.784779	LR: 4.6E-04	Time: 3.03s/it
+--- Epoch 46 Summary ---
+Average Training Loss: 0.279686
+Average Grad Norm: 0.581335
+Epoch Duration: 481.78s
+--- Epoch: 47 ---
+Train Iter: 7000 Epoch: 47 [1456/2367 (62%)]	Loss: 0.358264	Grad Norm: 0.339897	LR: 4.6E-04	Time: 2.48s/it
+--- Epoch 47 Summary ---
+Average Training Loss: 0.278896
+Average Grad Norm: 0.435396
+Epoch Duration: 479.84s

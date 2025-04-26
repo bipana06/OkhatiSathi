@@ -1,0 +1,11 @@
+Weights & Biases tracking enabled.
+FP16 Run: False
+Dynamic Loss Scaling: True
+Distributed Run: False
+cuDNN Enabled: True
+cuDNN Benchmark: False
+An error occurred during training: name 'pretrained_checkpoint_path' is not defined
+Traceback (most recent call last):
+  File "<ipython-input-4-324c4e357ba3>", line 30, in <module>
+    checkpoint_path=pretrained_checkpoint_path, # Path for saving checkpoints *prefix*
+NameError: name 'pretrained_checkpoint_path' is not defined

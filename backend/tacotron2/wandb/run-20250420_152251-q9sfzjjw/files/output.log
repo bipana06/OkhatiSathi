@@ -1,0 +1,7 @@
+--- Starting W&B Run: denim-oath-21 (ID: q9sfzjjw) ---
+--- ERROR during W&B Run q9sfzjjw ---
+name 'HParams' is not defined
+Traceback (most recent call last):
+  File "<ipython-input-1-08ce7719187d>", line 29, in run_training_sweep
+    hparams = HParams() # Load your defaults defined in the class
+NameError: name 'HParams' is not defined

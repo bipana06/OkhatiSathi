@@ -1,0 +1,730 @@
+--- Starting W&B Run: jolly-sweep-24 (ID: axbbpcro) ---
+Sweep Configuration for this run:
+  Overriding hparams.batch_size: 32 -> 32
+  Overriding hparams.early_stopping_patience: 10 -> 15
+  Overriding hparams.learning_rate: 0.0001 -> 0.00020944422167567403
+  Overriding hparams.p_attention_dropout: 0.1 -> 0.15
+  Overriding hparams.p_decoder_dropout: 0.1 -> 0.15
+  Overriding hparams.weight_decay: 1e-06 -> 5.535701686586639e-07
+Run-specific Output Directory: ./outdir_sweep/axbbpcro
+--- Final HParams for Training Run ---
+  epochs: 200
+  seed: 1234
+  distributed_run: False
+  n_gpus: 1
+  rank: 0
+  group_name: group_name
+  cudnn_enabled: True
+  cudnn_benchmark: False
+  fp16_run: False
+  load_mel_from_disk: False
+  training_files: ./filelists/train_list.txt
+  validation_files: ./filelists/val_list.txt
+  text_cleaners: ['transliteration_cleaners']
+  num_workers: 4
+  pin_memory: True
+  max_wav_value: 32768.0
+  sampling_rate: 22050
+  filter_length: 1024
+  hop_length: 256
+  win_length: 1024
+  n_mel_channels: 80
+  mel_fmin: 0.0
+  mel_fmax: 8000.0
+  n_symbols: 148
+  symbols_embedding_dim: 512
+  encoder_kernel_size: 5
+  encoder_n_convolutions: 3
+  encoder_embedding_dim: 512
+  n_frames_per_step: 1
+  decoder_rnn_dim: 1024
+  prenet_dim: 256
+  max_decoder_steps: 1000
+  gate_threshold: 0.5
+  p_attention_dropout: 0.15
+  p_decoder_dropout: 0.15
+  attention_rnn_dim: 1024
+  attention_dim: 128
+  attention_location_n_filters: 32
+  attention_location_kernel_size: 31
+  postnet_embedding_dim: 512
+  postnet_kernel_size: 5
+  postnet_n_convolutions: 5
+  use_saved_learning_rate: False
+  learning_rate: 0.00020944422167567403
+  weight_decay: 5.535701686586639e-07
+  grad_clip_thresh: 1.0
+  batch_size: 32
+  mask_padding: True
+  log_interval: 100
+  iters_per_checkpoint: 1000
+  early_stopping_patience: 15
+  min_val_loss_delta: 0.0001
+  ignore_layers: ['embedding.weight']
+--------------------------------------
+Calling train function...
+TensorBoard Log directory: ./outdir_sweep/axbbpcro/logs
+Warm starting model from checkpoint 'tacotron2_statedict.pt'
+  Applying warm start: Ignored 1 keys based on ignore_layers. Loading 83 keys.
+Warm start complete. Optimizer and iteration count reset.
+Starting training for 200 epochs...
+--- Epoch: 0 ---
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+Train Iter: 0 Epoch: 0 [0/2367 (0%)]	Loss: 1.468882	Grad Norm: 10.989008	LR: 2.1E-04	Time: 6.70s/it
+--- Epoch 0 Summary ---
+Average Training Loss: 0.660280
+Average Grad Norm: 1.508026
+Epoch Duration: 362.79s
+--- Running Validation at Iteration 73 ---
+Validation Loss: 0.491061 (Duration: 13.47s)
+Saving model and optimizer state at iteration 73 to ./outdir_sweep/axbbpcro/checkpoint_73
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_73
+Checking Early Stopping: Current Best Loss = inf, New Loss = 0.491061
+Saving model and optimizer state at iteration 73 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_73_loss_0.4911.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_73_loss_0.4911.pt
+  Validation loss improved! New best: 0.491061. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_73_loss_0.4911.pt
+--- Validation Complete ---
+--- Epoch: 1 ---
+Train Iter: 100 Epoch: 1 [864/2367 (37%)]	Loss: 0.575337	Grad Norm: 2.277202	LR: 2.1E-04	Time: 4.12s/it
+--- Epoch 1 Summary ---
+Average Training Loss: 0.527474
+Average Grad Norm: 1.009411
+Epoch Duration: 357.20s
+--- Running Validation at Iteration 146 ---
+Validation Loss: 0.456826 (Duration: 13.43s)
+Saving model and optimizer state at iteration 146 to ./outdir_sweep/axbbpcro/checkpoint_146
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_146
+Checking Early Stopping: Current Best Loss = 0.491061, New Loss = 0.456826
+Saving model and optimizer state at iteration 146 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_146_loss_0.4568.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_146_loss_0.4568.pt
+  Validation loss improved! New best: 0.456826. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_146_loss_0.4568.pt
+--- Validation Complete ---
+--- Epoch: 2 ---
+Train Iter: 200 Epoch: 2 [1728/2367 (74%)]	Loss: 0.461501	Grad Norm: 0.346578	LR: 2.1E-04	Time: 5.19s/it
+--- Epoch 2 Summary ---
+Average Training Loss: 0.489990
+Average Grad Norm: 0.966725
+Epoch Duration: 360.38s
+--- Running Validation at Iteration 219 ---
+Validation Loss: 0.430714 (Duration: 13.36s)
+Saving model and optimizer state at iteration 219 to ./outdir_sweep/axbbpcro/checkpoint_219
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_219
+Checking Early Stopping: Current Best Loss = 0.456826, New Loss = 0.430714
+Saving model and optimizer state at iteration 219 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_219_loss_0.4307.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_219_loss_0.4307.pt
+  Validation loss improved! New best: 0.430714. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_219_loss_0.4307.pt
+--- Validation Complete ---
+--- Epoch: 3 ---
+--- Epoch 3 Summary ---
+Average Training Loss: 0.471092
+Average Grad Norm: 0.974046
+Epoch Duration: 364.61s
+--- Running Validation at Iteration 292 ---
+Validation Loss: 0.420171 (Duration: 13.35s)
+Saving model and optimizer state at iteration 292 to ./outdir_sweep/axbbpcro/checkpoint_292
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_292
+Checking Early Stopping: Current Best Loss = 0.430714, New Loss = 0.420171
+Saving model and optimizer state at iteration 292 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_292_loss_0.4202.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_292_loss_0.4202.pt
+  Validation loss improved! New best: 0.420171. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_292_loss_0.4202.pt
+--- Validation Complete ---
+--- Epoch: 4 ---
+Train Iter: 300 Epoch: 4 [256/2367 (11%)]	Loss: 0.400766	Grad Norm: 0.412091	LR: 2.1E-04	Time: 5.02s/it
+--- Epoch 4 Summary ---
+Average Training Loss: 0.461627
+Average Grad Norm: 0.758216
+Epoch Duration: 361.67s
+--- Running Validation at Iteration 365 ---
+Validation Loss: 0.408226 (Duration: 13.38s)
+Saving model and optimizer state at iteration 365 to ./outdir_sweep/axbbpcro/checkpoint_365
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_365
+Checking Early Stopping: Current Best Loss = 0.420171, New Loss = 0.408226
+Saving model and optimizer state at iteration 365 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_365_loss_0.4082.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_365_loss_0.4082.pt
+  Validation loss improved! New best: 0.408226. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_365_loss_0.4082.pt
+--- Validation Complete ---
+--- Epoch: 5 ---
+Train Iter: 400 Epoch: 5 [1120/2367 (48%)]	Loss: 0.477897	Grad Norm: 1.092654	LR: 2.1E-04	Time: 4.36s/it
+--- Epoch 5 Summary ---
+Average Training Loss: 0.447068
+Average Grad Norm: 0.780506
+Epoch Duration: 365.04s
+--- Running Validation at Iteration 438 ---
+Validation Loss: 0.398922 (Duration: 13.53s)
+Saving model and optimizer state at iteration 438 to ./outdir_sweep/axbbpcro/checkpoint_438
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_438
+Checking Early Stopping: Current Best Loss = 0.408226, New Loss = 0.398922
+Saving model and optimizer state at iteration 438 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_438_loss_0.3989.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_438_loss_0.3989.pt
+  Validation loss improved! New best: 0.398922. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_438_loss_0.3989.pt
+--- Validation Complete ---
+--- Epoch: 6 ---
+Train Iter: 500 Epoch: 6 [1984/2367 (85%)]	Loss: 0.452818	Grad Norm: 0.375987	LR: 2.1E-04	Time: 5.76s/it
+--- Epoch 6 Summary ---
+Average Training Loss: 0.436065
+Average Grad Norm: 0.567921
+Epoch Duration: 364.27s
+--- Running Validation at Iteration 511 ---
+Validation Loss: 0.391884 (Duration: 13.50s)
+Saving model and optimizer state at iteration 511 to ./outdir_sweep/axbbpcro/checkpoint_511
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_511
+Checking Early Stopping: Current Best Loss = 0.398922, New Loss = 0.391884
+Saving model and optimizer state at iteration 511 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_511_loss_0.3919.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_511_loss_0.3919.pt
+  Validation loss improved! New best: 0.391884. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_511_loss_0.3919.pt
+--- Validation Complete ---
+--- Epoch: 7 ---
+--- Epoch 7 Summary ---
+Average Training Loss: 0.433629
+Average Grad Norm: 0.837671
+Epoch Duration: 355.89s
+--- Running Validation at Iteration 584 ---
+Validation Loss: 0.382939 (Duration: 13.56s)
+Saving model and optimizer state at iteration 584 to ./outdir_sweep/axbbpcro/checkpoint_584
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_584
+Checking Early Stopping: Current Best Loss = 0.391884, New Loss = 0.382939
+Saving model and optimizer state at iteration 584 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_584_loss_0.3829.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_584_loss_0.3829.pt
+  Validation loss improved! New best: 0.382939. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_584_loss_0.3829.pt
+--- Validation Complete ---
+--- Epoch: 8 ---
+Train Iter: 600 Epoch: 8 [512/2367 (22%)]	Loss: 0.415074	Grad Norm: 0.332852	LR: 2.1E-04	Time: 4.20s/it
+--- Epoch 8 Summary ---
+Average Training Loss: 0.415532
+Average Grad Norm: 0.700683
+Epoch Duration: 368.12s
+--- Running Validation at Iteration 657 ---
+Validation Loss: 0.378895 (Duration: 13.41s)
+Saving model and optimizer state at iteration 657 to ./outdir_sweep/axbbpcro/checkpoint_657
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_657
+Checking Early Stopping: Current Best Loss = 0.382939, New Loss = 0.378895
+Saving model and optimizer state at iteration 657 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_657_loss_0.3789.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_657_loss_0.3789.pt
+  Validation loss improved! New best: 0.378895. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_657_loss_0.3789.pt
+--- Validation Complete ---
+--- Epoch: 9 ---
+Train Iter: 700 Epoch: 9 [1376/2367 (59%)]	Loss: 0.435411	Grad Norm: 0.754236	LR: 2.1E-04	Time: 4.70s/it
+--- Epoch 9 Summary ---
+Average Training Loss: 0.412996
+Average Grad Norm: 0.759537
+Epoch Duration: 361.44s
+--- Running Validation at Iteration 730 ---
+Validation Loss: 0.374367 (Duration: 13.38s)
+Saving model and optimizer state at iteration 730 to ./outdir_sweep/axbbpcro/checkpoint_730
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_730
+Checking Early Stopping: Current Best Loss = 0.378895, New Loss = 0.374367
+Saving model and optimizer state at iteration 730 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_730_loss_0.3744.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_730_loss_0.3744.pt
+  Validation loss improved! New best: 0.374367. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_730_loss_0.3744.pt
+--- Validation Complete ---
+--- Epoch: 10 ---
+Train Iter: 800 Epoch: 10 [2240/2367 (96%)]	Loss: 0.403508	Grad Norm: 0.800290	LR: 2.1E-04	Time: 4.56s/it
+--- Epoch 10 Summary ---
+Average Training Loss: 0.406470
+Average Grad Norm: 0.581734
+Epoch Duration: 357.87s
+--- Running Validation at Iteration 803 ---
+Validation Loss: 0.366979 (Duration: 13.39s)
+Saving model and optimizer state at iteration 803 to ./outdir_sweep/axbbpcro/checkpoint_803
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_803
+Checking Early Stopping: Current Best Loss = 0.374367, New Loss = 0.366979
+Saving model and optimizer state at iteration 803 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_803_loss_0.3670.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_803_loss_0.3670.pt
+  Validation loss improved! New best: 0.366979. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_803_loss_0.3670.pt
+--- Validation Complete ---
+--- Epoch: 11 ---
+--- Epoch 11 Summary ---
+Average Training Loss: 0.408381
+Average Grad Norm: 0.664556
+Epoch Duration: 354.70s
+--- Running Validation at Iteration 876 ---
+Validation Loss: 0.365573 (Duration: 13.29s)
+Saving model and optimizer state at iteration 876 to ./outdir_sweep/axbbpcro/checkpoint_876
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_876
+Checking Early Stopping: Current Best Loss = 0.366979, New Loss = 0.365573
+Saving model and optimizer state at iteration 876 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_876_loss_0.3656.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_876_loss_0.3656.pt
+  Validation loss improved! New best: 0.365573. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_876_loss_0.3656.pt
+--- Validation Complete ---
+--- Epoch: 12 ---
+Train Iter: 900 Epoch: 12 [768/2367 (33%)]	Loss: 0.300457	Grad Norm: 0.215840	LR: 2.1E-04	Time: 6.23s/it
+--- Epoch 12 Summary ---
+Average Training Loss: 0.394604
+Average Grad Norm: 0.586751
+Epoch Duration: 358.54s
+--- Running Validation at Iteration 949 ---
+Validation Loss: 0.360275 (Duration: 13.36s)
+Saving model and optimizer state at iteration 949 to ./outdir_sweep/axbbpcro/checkpoint_949
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_949
+Checking Early Stopping: Current Best Loss = 0.365573, New Loss = 0.360275
+Saving model and optimizer state at iteration 949 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_949_loss_0.3603.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_949_loss_0.3603.pt
+  Validation loss improved! New best: 0.360275. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_949_loss_0.3603.pt
+--- Validation Complete ---
+--- Epoch: 13 ---
+Train Iter: 1000 Epoch: 13 [1632/2367 (70%)]	Loss: 0.426066	Grad Norm: 0.405344	LR: 2.1E-04	Time: 3.87s/it
+--- Epoch 13 Summary ---
+Average Training Loss: 0.392603
+Average Grad Norm: 0.469595
+Epoch Duration: 355.72s
+--- Running Validation at Iteration 1022 ---
+Validation Loss: 0.358756 (Duration: 13.35s)
+Saving model and optimizer state at iteration 1022 to ./outdir_sweep/axbbpcro/checkpoint_1022
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1022
+Checking Early Stopping: Current Best Loss = 0.360275, New Loss = 0.358756
+Saving model and optimizer state at iteration 1022 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1022_loss_0.3588.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1022_loss_0.3588.pt
+  Validation loss improved! New best: 0.358756. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1022_loss_0.3588.pt
+--- Validation Complete ---
+--- Epoch: 14 ---
+--- Epoch 14 Summary ---
+Average Training Loss: 0.385899
+Average Grad Norm: 0.612497
+Epoch Duration: 359.38s
+--- Running Validation at Iteration 1095 ---
+Validation Loss: 0.358228 (Duration: 13.38s)
+Saving model and optimizer state at iteration 1095 to ./outdir_sweep/axbbpcro/checkpoint_1095
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1095
+Checking Early Stopping: Current Best Loss = 0.358756, New Loss = 0.358228
+Saving model and optimizer state at iteration 1095 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1095_loss_0.3582.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1095_loss_0.3582.pt
+  Validation loss improved! New best: 0.358228. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1095_loss_0.3582.pt
+--- Validation Complete ---
+--- Epoch: 15 ---
+Train Iter: 1100 Epoch: 15 [160/2367 (7%)]	Loss: 0.334762	Grad Norm: 0.231056	LR: 2.1E-04	Time: 5.94s/it
+--- Epoch 15 Summary ---
+Average Training Loss: 0.377958
+Average Grad Norm: 0.491912
+Epoch Duration: 361.44s
+--- Running Validation at Iteration 1168 ---
+Validation Loss: 0.353903 (Duration: 13.40s)
+Saving model and optimizer state at iteration 1168 to ./outdir_sweep/axbbpcro/checkpoint_1168
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1168
+Checking Early Stopping: Current Best Loss = 0.358228, New Loss = 0.353903
+Saving model and optimizer state at iteration 1168 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1168_loss_0.3539.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1168_loss_0.3539.pt
+  Validation loss improved! New best: 0.353903. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1168_loss_0.3539.pt
+--- Validation Complete ---
+--- Epoch: 16 ---
+Train Iter: 1200 Epoch: 16 [1024/2367 (44%)]	Loss: 0.259953	Grad Norm: 0.274581	LR: 2.1E-04	Time: 6.08s/it
+--- Epoch 16 Summary ---
+Average Training Loss: 0.370804
+Average Grad Norm: 0.423730
+Epoch Duration: 362.38s
+--- Running Validation at Iteration 1241 ---
+Validation Loss: 0.350988 (Duration: 13.39s)
+Saving model and optimizer state at iteration 1241 to ./outdir_sweep/axbbpcro/checkpoint_1241
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1241
+Checking Early Stopping: Current Best Loss = 0.353903, New Loss = 0.350988
+Saving model and optimizer state at iteration 1241 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1241_loss_0.3510.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1241_loss_0.3510.pt
+  Validation loss improved! New best: 0.350988. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1241_loss_0.3510.pt
+--- Validation Complete ---
+--- Epoch: 17 ---
+Train Iter: 1300 Epoch: 17 [1888/2367 (81%)]	Loss: 0.335047	Grad Norm: 1.009532	LR: 2.1E-04	Time: 5.27s/it
+--- Epoch 17 Summary ---
+Average Training Loss: 0.367771
+Average Grad Norm: 0.592001
+Epoch Duration: 362.53s
+--- Running Validation at Iteration 1314 ---
+Validation Loss: 0.346343 (Duration: 13.43s)
+Saving model and optimizer state at iteration 1314 to ./outdir_sweep/axbbpcro/checkpoint_1314
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1314
+Checking Early Stopping: Current Best Loss = 0.350988, New Loss = 0.346343
+Saving model and optimizer state at iteration 1314 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1314_loss_0.3463.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1314_loss_0.3463.pt
+  Validation loss improved! New best: 0.346343. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1314_loss_0.3463.pt
+--- Validation Complete ---
+--- Epoch: 18 ---
+--- Epoch 18 Summary ---
+Average Training Loss: 0.367174
+Average Grad Norm: 0.481870
+Epoch Duration: 360.41s
+--- Running Validation at Iteration 1387 ---
+Validation Loss: 0.345368 (Duration: 13.41s)
+Saving model and optimizer state at iteration 1387 to ./outdir_sweep/axbbpcro/checkpoint_1387
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1387
+Checking Early Stopping: Current Best Loss = 0.346343, New Loss = 0.345368
+Saving model and optimizer state at iteration 1387 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1387_loss_0.3454.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1387_loss_0.3454.pt
+  Validation loss improved! New best: 0.345368. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1387_loss_0.3454.pt
+--- Validation Complete ---
+--- Epoch: 19 ---
+Train Iter: 1400 Epoch: 19 [416/2367 (18%)]	Loss: 0.265612	Grad Norm: 0.251096	LR: 2.1E-04	Time: 6.05s/it
+--- Epoch 19 Summary ---
+Average Training Loss: 0.360859
+Average Grad Norm: 0.535467
+Epoch Duration: 362.60s
+--- Running Validation at Iteration 1460 ---
+Validation Loss: 0.346139 (Duration: 13.37s)
+Saving model and optimizer state at iteration 1460 to ./outdir_sweep/axbbpcro/checkpoint_1460
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1460
+Checking Early Stopping: Current Best Loss = 0.345368, New Loss = 0.346139
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 20 ---
+Train Iter: 1500 Epoch: 20 [1280/2367 (55%)]	Loss: 0.310185	Grad Norm: 0.251446	LR: 2.1E-04	Time: 5.95s/it
+--- Epoch 20 Summary ---
+Average Training Loss: 0.358181
+Average Grad Norm: 0.464449
+Epoch Duration: 361.30s
+--- Running Validation at Iteration 1533 ---
+Validation Loss: 0.344626 (Duration: 13.37s)
+Saving model and optimizer state at iteration 1533 to ./outdir_sweep/axbbpcro/checkpoint_1533
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1533
+Checking Early Stopping: Current Best Loss = 0.345368, New Loss = 0.344626
+Saving model and optimizer state at iteration 1533 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1533_loss_0.3446.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1533_loss_0.3446.pt
+  Validation loss improved! New best: 0.344626. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1533_loss_0.3446.pt
+--- Validation Complete ---
+--- Epoch: 21 ---
+Train Iter: 1600 Epoch: 21 [2144/2367 (92%)]	Loss: 0.355235	Grad Norm: 0.639836	LR: 2.1E-04	Time: 4.89s/it
+--- Epoch 21 Summary ---
+Average Training Loss: 0.360224
+Average Grad Norm: 0.693702
+Epoch Duration: 359.80s
+--- Running Validation at Iteration 1606 ---
+Validation Loss: 0.351180 (Duration: 13.39s)
+Saving model and optimizer state at iteration 1606 to ./outdir_sweep/axbbpcro/checkpoint_1606
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1606
+Checking Early Stopping: Current Best Loss = 0.344626, New Loss = 0.351180
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 22 ---
+--- Epoch 22 Summary ---
+Average Training Loss: 0.361611
+Average Grad Norm: 0.598319
+Epoch Duration: 358.67s
+--- Running Validation at Iteration 1679 ---
+Validation Loss: 0.344516 (Duration: 13.32s)
+Saving model and optimizer state at iteration 1679 to ./outdir_sweep/axbbpcro/checkpoint_1679
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1679
+Checking Early Stopping: Current Best Loss = 0.344626, New Loss = 0.344516
+Saving model and optimizer state at iteration 1679 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1679_loss_0.3445.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1679_loss_0.3445.pt
+  Validation loss improved! New best: 0.344516. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1679_loss_0.3445.pt
+--- Validation Complete ---
+--- Epoch: 23 ---
+Train Iter: 1700 Epoch: 23 [672/2367 (29%)]	Loss: 0.411269	Grad Norm: 0.953442	LR: 2.1E-04	Time: 4.17s/it
+--- Epoch 23 Summary ---
+Average Training Loss: 0.351541
+Average Grad Norm: 0.565841
+Epoch Duration: 360.81s
+--- Running Validation at Iteration 1752 ---
+Validation Loss: 0.345095 (Duration: 13.38s)
+Saving model and optimizer state at iteration 1752 to ./outdir_sweep/axbbpcro/checkpoint_1752
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1752
+Checking Early Stopping: Current Best Loss = 0.344516, New Loss = 0.345095
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 24 ---
+Train Iter: 1800 Epoch: 24 [1536/2367 (66%)]	Loss: 0.364433	Grad Norm: 0.302713	LR: 2.1E-04	Time: 5.00s/it
+--- Epoch 24 Summary ---
+Average Training Loss: 0.346132
+Average Grad Norm: 0.411595
+Epoch Duration: 363.58s
+--- Running Validation at Iteration 1825 ---
+Validation Loss: 0.343010 (Duration: 13.36s)
+Saving model and optimizer state at iteration 1825 to ./outdir_sweep/axbbpcro/checkpoint_1825
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1825
+Checking Early Stopping: Current Best Loss = 0.344516, New Loss = 0.343010
+Saving model and optimizer state at iteration 1825 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_1825_loss_0.3430.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1825_loss_0.3430.pt
+  Validation loss improved! New best: 0.343010. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_1825_loss_0.3430.pt
+--- Validation Complete ---
+--- Epoch: 25 ---
+--- Epoch 25 Summary ---
+Average Training Loss: 0.348359
+Average Grad Norm: 0.422501
+Epoch Duration: 360.52s
+--- Running Validation at Iteration 1898 ---
+Validation Loss: 0.343752 (Duration: 13.49s)
+Saving model and optimizer state at iteration 1898 to ./outdir_sweep/axbbpcro/checkpoint_1898
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1898
+Checking Early Stopping: Current Best Loss = 0.343010, New Loss = 0.343752
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 26 ---
+Train Iter: 1900 Epoch: 26 [64/2367 (3%)]	Loss: 0.308410	Grad Norm: 0.258862	LR: 2.1E-04	Time: 5.33s/it
+--- Epoch 26 Summary ---
+Average Training Loss: 0.340697
+Average Grad Norm: 0.357992
+Epoch Duration: 365.21s
+--- Running Validation at Iteration 1971 ---
+Validation Loss: 0.344546 (Duration: 13.38s)
+Saving model and optimizer state at iteration 1971 to ./outdir_sweep/axbbpcro/checkpoint_1971
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_1971
+Checking Early Stopping: Current Best Loss = 0.343010, New Loss = 0.344546
+  Validation loss did not improve significantly (2/15).
+--- Validation Complete ---
+--- Epoch: 27 ---
+Train Iter: 2000 Epoch: 27 [928/2367 (40%)]	Loss: 0.319945	Grad Norm: 0.550559	LR: 2.1E-04	Time: 5.43s/it
+--- Epoch 27 Summary ---
+Average Training Loss: 0.344852
+Average Grad Norm: 0.436181
+Epoch Duration: 357.23s
+--- Running Validation at Iteration 2044 ---
+Validation Loss: 0.341395 (Duration: 13.42s)
+Saving model and optimizer state at iteration 2044 to ./outdir_sweep/axbbpcro/checkpoint_2044
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2044
+Checking Early Stopping: Current Best Loss = 0.343010, New Loss = 0.341395
+Saving model and optimizer state at iteration 2044 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_2044_loss_0.3414.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2044_loss_0.3414.pt
+  Validation loss improved! New best: 0.341395. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2044_loss_0.3414.pt
+--- Validation Complete ---
+--- Epoch: 28 ---
+Train Iter: 2100 Epoch: 28 [1792/2367 (77%)]	Loss: 0.248265	Grad Norm: 0.554328	LR: 2.1E-04	Time: 6.46s/it
+--- Epoch 28 Summary ---
+Average Training Loss: 0.341218
+Average Grad Norm: 0.435381
+Epoch Duration: 359.23s
+--- Running Validation at Iteration 2117 ---
+Validation Loss: 0.341606 (Duration: 13.47s)
+Saving model and optimizer state at iteration 2117 to ./outdir_sweep/axbbpcro/checkpoint_2117
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2117
+Checking Early Stopping: Current Best Loss = 0.341395, New Loss = 0.341606
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 29 ---
+--- Epoch 29 Summary ---
+Average Training Loss: 0.338538
+Average Grad Norm: 0.387238
+Epoch Duration: 360.68s
+--- Running Validation at Iteration 2190 ---
+Validation Loss: 0.340889 (Duration: 13.42s)
+Saving model and optimizer state at iteration 2190 to ./outdir_sweep/axbbpcro/checkpoint_2190
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2190
+Checking Early Stopping: Current Best Loss = 0.341395, New Loss = 0.340889
+Saving model and optimizer state at iteration 2190 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_2190_loss_0.3409.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2190_loss_0.3409.pt
+  Validation loss improved! New best: 0.340889. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2190_loss_0.3409.pt
+--- Validation Complete ---
+--- Epoch: 30 ---
+Train Iter: 2200 Epoch: 30 [320/2367 (14%)]	Loss: 0.280209	Grad Norm: 0.223557	LR: 2.1E-04	Time: 5.31s/it
+--- Epoch 30 Summary ---
+Average Training Loss: 0.335997
+Average Grad Norm: 0.412086
+Epoch Duration: 360.77s
+--- Running Validation at Iteration 2263 ---
+Validation Loss: 0.344358 (Duration: 13.35s)
+Saving model and optimizer state at iteration 2263 to ./outdir_sweep/axbbpcro/checkpoint_2263
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2263
+Checking Early Stopping: Current Best Loss = 0.340889, New Loss = 0.344358
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 31 ---
+Train Iter: 2300 Epoch: 31 [1184/2367 (51%)]	Loss: 0.344515	Grad Norm: 0.563404	LR: 2.1E-04	Time: 4.56s/it
+--- Epoch 31 Summary ---
+Average Training Loss: 0.338181
+Average Grad Norm: 0.512347
+Epoch Duration: 355.57s
+--- Running Validation at Iteration 2336 ---
+Validation Loss: 0.344371 (Duration: 13.41s)
+Saving model and optimizer state at iteration 2336 to ./outdir_sweep/axbbpcro/checkpoint_2336
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2336
+Checking Early Stopping: Current Best Loss = 0.340889, New Loss = 0.344371
+  Validation loss did not improve significantly (2/15).
+--- Validation Complete ---
+--- Epoch: 32 ---
+Train Iter: 2400 Epoch: 32 [2048/2367 (88%)]	Loss: 0.368951	Grad Norm: 0.694849	LR: 2.1E-04	Time: 4.17s/it
+--- Epoch 32 Summary ---
+Average Training Loss: 0.335764
+Average Grad Norm: 0.516491
+Epoch Duration: 357.67s
+--- Running Validation at Iteration 2409 ---
+Validation Loss: 0.338942 (Duration: 13.38s)
+Saving model and optimizer state at iteration 2409 to ./outdir_sweep/axbbpcro/checkpoint_2409
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2409
+Checking Early Stopping: Current Best Loss = 0.340889, New Loss = 0.338942
+Saving model and optimizer state at iteration 2409 to ./outdir_sweep/axbbpcro/checkpoint_best_iter_2409_loss_0.3389.pt
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2409_loss_0.3389.pt
+  Validation loss improved! New best: 0.338942. Saved best model: ./outdir_sweep/axbbpcro/checkpoint_best_iter_2409_loss_0.3389.pt
+--- Validation Complete ---
+--- Epoch: 33 ---
+--- Epoch 33 Summary ---
+Average Training Loss: 0.326663
+Average Grad Norm: 0.394278
+Epoch Duration: 364.79s
+--- Running Validation at Iteration 2482 ---
+Validation Loss: 0.341140 (Duration: 13.43s)
+Saving model and optimizer state at iteration 2482 to ./outdir_sweep/axbbpcro/checkpoint_2482
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2482
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.341140
+  Validation loss did not improve significantly (1/15).
+--- Validation Complete ---
+--- Epoch: 34 ---
+Train Iter: 2500 Epoch: 34 [576/2367 (25%)]	Loss: 0.270387	Grad Norm: 0.494744	LR: 2.1E-04	Time: 5.90s/it
+--- Epoch 34 Summary ---
+Average Training Loss: 0.329104
+Average Grad Norm: 0.407716
+Epoch Duration: 357.81s
+--- Running Validation at Iteration 2555 ---
+Validation Loss: 0.342039 (Duration: 13.38s)
+Saving model and optimizer state at iteration 2555 to ./outdir_sweep/axbbpcro/checkpoint_2555
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2555
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.342039
+  Validation loss did not improve significantly (2/15).
+--- Validation Complete ---
+--- Epoch: 35 ---
+Train Iter: 2600 Epoch: 35 [1440/2367 (62%)]	Loss: 0.368257	Grad Norm: 0.494009	LR: 2.1E-04	Time: 4.78s/it
+--- Epoch 35 Summary ---
+Average Training Loss: 0.332557
+Average Grad Norm: 0.473367
+Epoch Duration: 355.61s
+--- Running Validation at Iteration 2628 ---
+Validation Loss: 0.344125 (Duration: 13.39s)
+Saving model and optimizer state at iteration 2628 to ./outdir_sweep/axbbpcro/checkpoint_2628
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2628
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.344125
+  Validation loss did not improve significantly (3/15).
+--- Validation Complete ---
+--- Epoch: 36 ---
+Train Iter: 2700 Epoch: 36 [2304/2367 (99%)]	Loss: 0.329878	Grad Norm: 0.283122	LR: 2.1E-04	Time: 4.95s/it
+--- Epoch 36 Summary ---
+Average Training Loss: 0.323468
+Average Grad Norm: 0.424392
+Epoch Duration: 362.31s
+--- Running Validation at Iteration 2701 ---
+Validation Loss: 0.341248 (Duration: 13.51s)
+Saving model and optimizer state at iteration 2701 to ./outdir_sweep/axbbpcro/checkpoint_2701
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2701
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.341248
+  Validation loss did not improve significantly (4/15).
+--- Validation Complete ---
+--- Epoch: 37 ---
+--- Epoch 37 Summary ---
+Average Training Loss: 0.319368
+Average Grad Norm: 0.380344
+Epoch Duration: 366.25s
+--- Running Validation at Iteration 2774 ---
+Validation Loss: 0.343138 (Duration: 13.34s)
+Saving model and optimizer state at iteration 2774 to ./outdir_sweep/axbbpcro/checkpoint_2774
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2774
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.343138
+  Validation loss did not improve significantly (5/15).
+--- Validation Complete ---
+--- Epoch: 38 ---
+Train Iter: 2800 Epoch: 38 [832/2367 (36%)]	Loss: 0.322309	Grad Norm: 0.274147	LR: 2.1E-04	Time: 4.88s/it
+--- Epoch 38 Summary ---
+Average Training Loss: 0.319758
+Average Grad Norm: 0.436155
+Epoch Duration: 364.71s
+--- Running Validation at Iteration 2847 ---
+Validation Loss: 0.342159 (Duration: 13.42s)
+Saving model and optimizer state at iteration 2847 to ./outdir_sweep/axbbpcro/checkpoint_2847
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2847
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.342159
+  Validation loss did not improve significantly (6/15).
+--- Validation Complete ---
+--- Epoch: 39 ---
+Train Iter: 2900 Epoch: 39 [1696/2367 (73%)]	Loss: 0.364491	Grad Norm: 0.332244	LR: 2.1E-04	Time: 3.93s/it
+--- Epoch 39 Summary ---
+Average Training Loss: 0.323635
+Average Grad Norm: 0.380420
+Epoch Duration: 357.95s
+--- Running Validation at Iteration 2920 ---
+Validation Loss: 0.340842 (Duration: 13.38s)
+Saving model and optimizer state at iteration 2920 to ./outdir_sweep/axbbpcro/checkpoint_2920
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2920
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.340842
+  Validation loss did not improve significantly (7/15).
+--- Validation Complete ---
+--- Epoch: 40 ---
+--- Epoch 40 Summary ---
+Average Training Loss: 0.318874
+Average Grad Norm: 0.311423
+Epoch Duration: 361.32s
+--- Running Validation at Iteration 2993 ---
+Validation Loss: 0.340762 (Duration: 13.36s)
+Saving model and optimizer state at iteration 2993 to ./outdir_sweep/axbbpcro/checkpoint_2993
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_2993
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.340762
+  Validation loss did not improve significantly (8/15).
+--- Validation Complete ---
+--- Epoch: 41 ---
+Train Iter: 3000 Epoch: 41 [224/2367 (10%)]	Loss: 0.243654	Grad Norm: 0.219042	LR: 2.1E-04	Time: 6.51s/it
+--- Epoch 41 Summary ---
+Average Training Loss: 0.321260
+Average Grad Norm: 0.451242
+Epoch Duration: 356.94s
+--- Running Validation at Iteration 3066 ---
+Validation Loss: 0.342279 (Duration: 13.59s)
+Saving model and optimizer state at iteration 3066 to ./outdir_sweep/axbbpcro/checkpoint_3066
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3066
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.342279
+  Validation loss did not improve significantly (9/15).
+--- Validation Complete ---
+--- Epoch: 42 ---
+Train Iter: 3100 Epoch: 42 [1088/2367 (47%)]	Loss: 0.270771	Grad Norm: 0.221522	LR: 2.1E-04	Time: 6.16s/it
+--- Epoch 42 Summary ---
+Average Training Loss: 0.319349
+Average Grad Norm: 0.411422
+Epoch Duration: 358.65s
+--- Running Validation at Iteration 3139 ---
+Validation Loss: 0.341283 (Duration: 13.34s)
+Saving model and optimizer state at iteration 3139 to ./outdir_sweep/axbbpcro/checkpoint_3139
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3139
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.341283
+  Validation loss did not improve significantly (10/15).
+--- Validation Complete ---
+--- Epoch: 43 ---
+Train Iter: 3200 Epoch: 43 [1952/2367 (84%)]	Loss: 0.327121	Grad Norm: 0.286906	LR: 2.1E-04	Time: 4.95s/it
+--- Epoch 43 Summary ---
+Average Training Loss: 0.315175
+Average Grad Norm: 0.418640
+Epoch Duration: 361.98s
+--- Running Validation at Iteration 3212 ---
+Validation Loss: 0.344409 (Duration: 13.35s)
+Saving model and optimizer state at iteration 3212 to ./outdir_sweep/axbbpcro/checkpoint_3212
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3212
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.344409
+  Validation loss did not improve significantly (11/15).
+--- Validation Complete ---
+--- Epoch: 44 ---
+--- Epoch 44 Summary ---
+Average Training Loss: 0.314526
+Average Grad Norm: 0.468785
+Epoch Duration: 363.98s
+--- Running Validation at Iteration 3285 ---
+Validation Loss: 0.343581 (Duration: 13.37s)
+Saving model and optimizer state at iteration 3285 to ./outdir_sweep/axbbpcro/checkpoint_3285
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3285
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.343581
+  Validation loss did not improve significantly (12/15).
+--- Validation Complete ---
+--- Epoch: 45 ---
+Train Iter: 3300 Epoch: 45 [480/2367 (21%)]	Loss: 0.306137	Grad Norm: 0.285374	LR: 2.1E-04	Time: 5.01s/it
+--- Epoch 45 Summary ---
+Average Training Loss: 0.314898
+Average Grad Norm: 0.441321
+Epoch Duration: 359.05s
+--- Running Validation at Iteration 3358 ---
+Validation Loss: 0.343693 (Duration: 13.34s)
+Saving model and optimizer state at iteration 3358 to ./outdir_sweep/axbbpcro/checkpoint_3358
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3358
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.343693
+  Validation loss did not improve significantly (13/15).
+--- Validation Complete ---
+--- Epoch: 46 ---
+Train Iter: 3400 Epoch: 46 [1344/2367 (58%)]	Loss: 0.351809	Grad Norm: 0.493403	LR: 2.1E-04	Time: 4.26s/it
+--- Epoch 46 Summary ---
+Average Training Loss: 0.311001
+Average Grad Norm: 0.374982
+Epoch Duration: 362.31s
+--- Running Validation at Iteration 3431 ---
+Validation Loss: 0.343618 (Duration: 13.42s)
+Saving model and optimizer state at iteration 3431 to ./outdir_sweep/axbbpcro/checkpoint_3431
+Checkpoint saved: ./outdir_sweep/axbbpcro/checkpoint_3431
+Checking Early Stopping: Current Best Loss = 0.338942, New Loss = 0.343618
+  Validation loss did not improve significantly (14/15).
+--- Validation Complete ---
+--- Epoch: 47 ---
+Train Iter: 3500 Epoch: 47 [2208/2367 (95%)]	Loss: 0.337080	Grad Norm: 0.577754	LR: 2.1E-04	Time: 4.03s/it
+--- Epoch 47 Summary ---
+Average Training Loss: 0.310093
+Average Grad Norm: 0.366542
+Epoch Duration: 360.35s
+--- Running Validation at Iteration 3504 ---

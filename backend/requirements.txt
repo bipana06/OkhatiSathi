@@ -22,7 +22,6 @@ opencv-python==4.11.0.86
 packaging==24.2
 parso==0.8.4
 pexpect==4.9.0
-pillow==11.2.0
 platformdirs==4.3.7
 prompt_toolkit==3.0.50
 psutil==7.0.0
@@ -40,3 +39,11 @@ tornado==6.4.2
 traitlets==5.14.3
 urllib3==2.3.0
 wcwidth==0.2.13
+torch>=1.9.0
+torchaudio>=0.9.0
+tqdm>=4.62.3
+librosa>=0.9.0
+Unidecode
+inflect
+gdown
+matplotlib

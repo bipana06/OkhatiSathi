@@ -1,0 +1,61 @@
+/var/spool/slurmd/job10524739/slurm_script: line 20: nvcc: command not found
+No Modulefiles Currently Loaded.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+wandb: Starting wandb agent 🕵️
+2025-04-22 11:08:08,729 - wandb.wandb_agent - INFO - Running runs: []
+2025-04-22 11:08:09,138 - wandb.wandb_agent - INFO - Agent received command: run
+2025-04-22 11:08:09,138 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 16
+	early_stopping_patience: 10
+	learning_rate: 1.5459264984160623e-05
+	p_attention_dropout: 0.05
+	p_decoder_dropout: 0.15
+	weight_decay: 3.088789866738597e-07
+2025-04-22 11:08:09,142 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python goat_finetune.py --batch_size=16 --early_stopping_patience=10 --learning_rate=1.5459264984160623e-05 --p_attention_dropout=0.05 --p_decoder_dropout=0.15 --weight_decay=3.088789866738597e-07
+2025-04-22 11:08:14,153 - wandb.wandb_agent - INFO - Running runs: ['mh8q0oqv']
+wandb: Currently logged in as: md5121 (md5121-new-york-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.21
+wandb: Run data is saved locally in /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250422_110815-mh8q0oqv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run still-sweep-19
+wandb: ⭐️ View project at https://wandb.ai/md5121-new-york-university/tacotron2
+wandb: 🧹 View sweep at https://wandb.ai/md5121-new-york-university/tacotron2/sweeps/w4oyzcwb
+wandb: 🚀 View run at https://wandb.ai/md5121-new-york-university/tacotron2/runs/mh8q0oqv
+/scratch/md5121/okhatisathi/tacotron2/stft.py:67: FutureWarning: Pass size=1024 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  fft_window = pad_center(fft_window, filter_length)
+/scratch/md5121/okhatisathi/tacotron2/layers.py:51: FutureWarning: Pass sr=22050, n_fft=1024, n_mels=80, fmin=0.0, fmax=8000.0 as keyword args. From version 0.10 passing these as positional arguments will result in an error
+  sampling_rate, filter_length, n_mel_channels, mel_fmin, mel_fmax)
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.106 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.009 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: / 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: / 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: \ 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: | 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: / 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb: - 0.111 MB of 0.111 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:               epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:      epoch/duration ▃█▅▆▆▅▅▄▇▁▄▃█▃▆▄▄▅▃▅▄▂▄▄▆▆▃▄▅▆▅▆▄▆▆▅▅▆▄▂
+wandb:     epoch/grad_norm █▂▂▂▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    epoch/train_loss █▄▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:         train/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:     train/grad_norm ▆█▄▂▂▃▃▄▃▅▂▂▆▂▂▄▃▁▃▂▁▃▁▁▂▂▂▂▂▂▁▂▂▃▂▂▁▁▃▂
+wandb: train/learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          train/loss ██▅▅▄▇▆▆▅▅▄▄▅▃▃▂▃▂▃▅▂▄▂▂▂▃▃▂▂▂▁▂▃▄▃▁▂▂▃▁
+wandb:            val/loss █▅▄▄▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               epoch 120
+wandb:      epoch/duration 637.34112
+wandb:     epoch/grad_norm 0.49097
+wandb:    epoch/train_loss 0.38512
+wandb:         train/epoch 120.40816
+wandb:     train/grad_norm 0.46167
+wandb: train/learning_rate 2e-05
+wandb:          train/loss 0.32324
+wandb:            val/loss 0.36851
+wandb: 
+wandb: Synced still-sweep-19: https://wandb.ai/md5121-new-york-university/tacotron2/runs/mh8q0oqv
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250422_110815-mh8q0oqv/logs
+2025-04-23 09:32:16,007 - wandb.wandb_agent - INFO - Cleaning up finished run: mh8q0oqv
+wandb: Terminating and syncing runs. Press ctrl-c to kill.

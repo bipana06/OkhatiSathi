@@ -1,0 +1,56 @@
+2025-04-19 14:17:56,849 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Configure stats pid to 2625211
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /home/md5121/.config/wandb/settings
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from /scratch/md5121/okhatisathi/tacotron2/wandb/settings
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_init.py:_log_setup():461] Logging user logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141756-8oape0qw/logs/debug.log
+2025-04-19 14:17:56,850 INFO    MainThread:2625211 [wandb_init.py:_log_setup():462] Logging internal logs to /scratch/md5121/okhatisathi/tacotron2/wandb/run-20250419_141756-8oape0qw/logs/debug-internal.log
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:_jupyter_setup():411] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x1554691a88d0>
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():495] calling init triggers
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {'epochs': 5, 'iters_per_checkpoint': 100, 'seed': 1234, 'dynamic_loss_scaling': True, 'fp16_run': False, 'distributed_run': False, 'dist_backend': 'nccl', 'dist_url': 'tcp://localhost:54321', 'cudnn_enabled': True, 'cudnn_benchmark': False, 'ignore_layers': ['embedding.weight'], 'load_mel_from_disk': False, 'training_files': './filelists/train_list.txt', 'validation_files': './filelists/val_list.txt', 'text_cleaners': ['transliteration_cleaners'], 'max_wav_value': 32768.0, 'sampling_rate': 22050, 'filter_length': 1024, 'hop_length': 256, 'win_length': 1024, 'n_mel_channels': 80, 'mel_fmin': 0.0, 'mel_fmax': 8000.0, 'n_symbols': 148, 'symbols_embedding_dim': 512, 'encoder_kernel_size': 5, 'encoder_n_convolutions': 3, 'encoder_embedding_dim': 512, 'n_frames_per_step': 1, 'decoder_rnn_dim': 1024, 'prenet_dim': 256, 'max_decoder_steps': 10000, 'gate_threshold': 0.5, 'p_attention_dropout': 0.1, 'p_decoder_dropout': 0.1, 'attention_rnn_dim': 1024, 'attention_dim': 128, 'attention_location_n_filters': 32, 'attention_location_kernel_size': 31, 'postnet_embedding_dim': 512, 'postnet_kernel_size': 5, 'postnet_n_convolutions': 5, 'use_saved_learning_rate': False, 'learning_rate': 0.001, 'weight_decay': 1e-06, 'grad_clip_thresh': 1.0, 'batch_size': 3, 'mask_padding': True}
+2025-04-19 14:17:56,851 INFO    MainThread:2625211 [wandb_init.py:init():515] re-initializing run, found existing run on stack: eeu7taho
+2025-04-19 14:17:56,879 ERROR   MainThread:2625211 [wandb_init.py:init():1070] error
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 527, in init
+    self._wl._global_run_stack[-1].finish()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 256, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1673, in finish
+    return self._finish(exit_code, quiet)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 1679, in _finish
+    tel.feature.finish = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2025-04-19 14:18:03,475 ERROR   MainThread:2625211 [wandb_init.py:init():1070] error
+Traceback (most recent call last):
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 1040, in init
+    wi.setup(kwargs)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_init.py", line 186, in setup
+    tel.feature.set_init_tags = True
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/lib/telemetry.py", line 41, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 572, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 583, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_telemetry
+    self._publish(rec)
+  File "/home/md5121/.conda/envs/t2env/lib/python3.6/site-packages/wandb/sdk/interface/interface_queue.py", line 49, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2025-04-19 14:18:13,069 INFO    MainThread:2625211 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2025-04-19 14:18:13,070 INFO    MainThread:2625211 [wandb_run.py:_restore():1834] restore
