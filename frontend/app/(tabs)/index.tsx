@@ -20,7 +20,7 @@ export default function HomeScreen() {
   const [error, setError] = useState('');
   const [photo, setPhoto] = useState<PhotoState | null>(null); // Use the interface
   const [isPlaying, setIsPlaying] = useState(false);
-
+  const [statusMessage, setStatusMessage] = useState<string | null>(null); // New state for status messages
 
   const handleImageUpload = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -95,6 +95,7 @@ export default function HomeScreen() {
     setError('');
     setIdentifiedMedicineName(null);
     setAudioUri(null);
+    setStatusMessage("Processing image... Please wait."); // Set status message
     handleStopAudio();
 
     try {
@@ -103,14 +104,17 @@ export default function HomeScreen() {
 
       if (response.drug_name) {
         console.log('Medicine identified:', response.drug_name);
+        setStatusMessage("Medicine identified. Preparing audio..."); // Update status message
         setIdentifiedMedicineName(response.matching_name);
         handleFetchAudio(response.drug_name);
       } else {
         setError(response.message || 'Medicine name not identified in the image.');
+        setStatusMessage(null); // Clear status message
       }
     } catch (err: any) {
       console.error('Error while processing image:', err);
       setError(`Failed to process image: ${err.message || 'Please try again.'}`);
+      setStatusMessage(null); // Clear status message
     } finally {
       setLoading(false);
     }
@@ -118,6 +122,7 @@ export default function HomeScreen() {
 
   const handleFetchAudio = async (medicineName: string) => {
     setError('');
+    setStatusMessage("Fetching audio... Please wait."); // Update status message
     try {
       const audioFileUrl = await getMedicineAudio(medicineName.toUpperCase());
       if (audioFileUrl) {
@@ -131,6 +136,7 @@ export default function HomeScreen() {
         setSound(newSound);
         setAudioUri(audioFileUrl); 
         setIsPlaying(true); // Start as playing
+        setStatusMessage("Audio Playing..."); // Update status message
   
         newSound.setOnPlaybackStatusUpdate((status) => {
           if (status.isLoaded && status.didJustFinish) {
@@ -144,6 +150,7 @@ export default function HomeScreen() {
     } catch (err: any) {
       setError(`Failed to fetch or play audio: ${err.message || 'Please try again.'}`);
       setAudioUri(null); 
+      setStatusMessage(null); // Clear status message
     }
   };
   
@@ -154,6 +161,7 @@ export default function HomeScreen() {
         if (status.isPlaying) {
           await sound.pauseAsync();
           setIsPlaying(false);
+          setStatusMessage("Audio Paused, Hit Play to continue"); // Update status message
         } else {
           await sound.playAsync();
           setIsPlaying(true);
@@ -173,6 +181,8 @@ export default function HomeScreen() {
         setSound(null);
         setAudioUri(null);
         setIsPlaying(false);
+        setStatusMessage(null); // Clear status message
+        setIdentifiedMedicineName(null);
       }
     }
   };
@@ -215,16 +225,18 @@ export default function HomeScreen() {
 
       {/* Identified Medicine Name */}
       {identifiedMedicineName && !loading && (
-        <Text style={styles.medicineName}>Identified: {identifiedMedicineName}</Text>
+        <Text style={styles.medicineName}>
+          <Text style={styles.labelText}>Identified Medicine: </Text>
+          <Text style={styles.medicineNameValue}>{identifiedMedicineName}</Text>
+        </Text>      
       )}
 
-      {/* {audioUri && !loading && (
-        <View style={styles.audioControls}>
-          <Button title={isPlaying ? "Pause" : "Play"} onPress={togglePlayback} />
-          <Button title="Stop" onPress={handleStopAudio} color="#FF5733" />
-        </View>
-      )} */}
-      
+      {/* Status Message */}
+      {statusMessage && (
+        <Text style={styles.statusMessage}>{statusMessage}</Text>
+      )}
+
+      {/* Audio Playback */}
       {audioUri && !loading && (
       <View style={styles.audioControls}>
         <View style={styles.audioButtonRow}>
@@ -269,6 +281,7 @@ const styles = StyleSheet.create({
     gap: 10,
     marginTop: 10,
     width: '90%',
+    color: '#3D365C',
   },
   loadingIndicator: {
     marginTop: 20,
@@ -293,5 +306,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  statusMessage: {
+    marginTop: 10,
+    fontSize: 16,
+    color: '#555',
+    textAlign: 'center',
+  },
+  labelText: {
+    color: '#424769', // Color for "Identified Medicine:"
+  },
+  medicineNameValue: {
+    color: '#99627A', // Color for the identified medicine name
+    fontWeight: '800',
+    fontSize: 22,
+    fontStyle: 'italic',
+
   },
 });
