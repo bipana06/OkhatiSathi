@@ -1,4 +1,4 @@
-program: goat_finetune.py # Or your converted .py script name
+program: goat_finetune.py 
 method: bayes # Or random, grid
 metric:
   name: val/loss # Metric to optimize (MUST match the name logged in train.py)
@@ -23,10 +23,7 @@ parameters:
     values: [0.05, 0.1, 0.15]
 
   # --- Early Stopping ---
-  # Optional: Tune patience if desired
   early_stopping_patience:
     values: [8, 10, 15]
 
-  # --- Other potential tunable params ---
-  # grad_clip_thresh:
-  #   values: [1.0, 5.0]
+
