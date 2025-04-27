@@ -80,7 +80,7 @@ class HParams:
         self.cudnn_enabled=True
         self.cudnn_benchmark=False # Set True if input size is constant, False otherwise
         self.fp16_run=False # Enable mixed precision (requires torch.cuda.amp)
-        # self.ignore_layers=['embedding.weight'] # Layers to ignore when loading warm start checkpoint
+        self.ignore_layers=['embedding.weight'] # Layers to ignore when loading warm start checkpoint
 
         ################################
         # Data Parameters             #
