@@ -1,4 +1,4 @@
-# Cell 1: Imports and Initial Setup (No changes needed usually)
+#Imports and Initial Setup 
 import torch
 import os
 import sys
@@ -33,7 +33,7 @@ except NameError:
     print("Librosa might not be installed or imported correctly.")
 
 
-# Cell 2: Define Paths (Adjust as needed)
+# Cell 2: Define Paths 
 output_directory_base = './outdir_sweep' # Base directory for all sweep runs
 log_directory_name = 'logs'             # Subdirectory name for TensorBoard logs within each run's output dir
 training_files = './filelists/train_list.txt' # Path to training list
@@ -153,7 +153,7 @@ class HParams:
 # Instantiate HParams once to have a base object (optional, as run_training_sweep creates its own)
 # hparams_default = HParams()
 # print("Default HParams created (will be overridden by sweep config).")
-# Cell 7: Training Execution Function for W&B Sweeps
+
 
 import wandb
 import traceback

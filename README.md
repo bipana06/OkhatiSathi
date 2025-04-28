@@ -33,11 +33,12 @@ OkhatiSathi/
 
 ### 1. Clone the Repository
 ```bash
+brew install git-lfs
+git lfs install
 git clone https://github.com/bipana06/OkhatiSathi.git
 cd OkhatiSathi
 ```
 
-### 2. Backend Setup
 
 #### a. Create and Activate a Virtual Environment
 Navigate to the backend folder and create a virtual environment. (Requires Python 3.8+)
@@ -53,6 +54,9 @@ Ensure that you have the required packages installed:
 pip install -r requirements.txt
 ```
 
+### If you only want to test how well the TTS model works, you can run backend/testing_audio.py with your own sentences! Your audio will be displayed under the backend/audio_files 
+
+### 2. Backend setup
 #### c. Configure Environment Variables
 Create a `.env` file in the `backend` directory and add your API keys. For example:
 ```
@@ -88,13 +92,13 @@ Follow the instructions to run the app on a device, emulator, or via the web.
 ## Usage
 
 1. **Input Image Upload:**  
-   Open the frontend app and upload an image of a medicine label. The OCR will extract and identify the medicine.
+   Open the frontend app and upload an image of a medicine label. The OCR will extract and identify the medicine. 
 
 2. **Information Retrieval:**  
    The backend will fetch additional medicine details and generate a simple Nepali explanation using the NER and TTS modules.
 
 3. **Audio Output:**  
-   The TTS system converts the text explanation into speech. You can listen to the generated audio, pause or stop it if needed (the frontend includes controls such as a “Stop Audio” button).
+   The TTS system converts the text explanation into speech. You can listen to the generated audio, pause or stop it if needed (the frontend includes controls such as a “Stop Audio” button). Please give at least 30 seconds for the audio to be played. While the audio might not sound perfect for medicines currently, you can test our TTS system by running the code backend/testing_audio.py!
 
 ## Troubleshooting
 
