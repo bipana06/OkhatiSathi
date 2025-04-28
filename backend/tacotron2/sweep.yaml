@@ -1,7 +1,7 @@
-program: goat_finetune.py 
-method: bayes # Or random, grid
+program: finetune.py 
+method: bayes 
 metric:
-  name: val/loss # Metric to optimize (MUST match the name logged in train.py)
+  name: val/loss # Metric to optimize 
   goal: minimize
 parameters:
   # --- Optimization ---
@@ -10,7 +10,7 @@ parameters:
     min: 1e-5
     max: 1e-3
   batch_size:
-    values: [16, 32] # Adjust based on GPU memory
+    values: [16, 32]
 
   # --- Regularization ---
   weight_decay:

@@ -233,7 +233,7 @@ async def get_medicine_audio_endpoint(request: MedicineRequest):
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a helpful Nepali nurse explaining medicine information in simple, clear Nepali language in devanagari script suitable for text-to-speech. Avoid medical jargon and complex sentence structures. Do not use markdown like * or :. Give everything in a small sentence (only 1 sentence)"
+                    "content": "You are a helpful Nepali nurse explaining medicine information in simple, clear Nepali language in devanagari script suitable for text-to-speech. Avoid medical jargon and complex sentence structures. Do not use markdown like * or :. Do not use any punctuation at all!"
                 },
                 {
                     "role": "user",
